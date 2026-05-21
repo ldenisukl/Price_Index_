@@ -1,0 +1,113 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Category {
+  id          String      @id @default(cuid())
+  name        String
+  type        CategoryType
+  slug        String      @unique
+  description String?
+  icon        String?
+  isActive    Boolean     @default(true)
+  priceItems  PriceItem[]
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+}
+
+enum CategoryType {
+  service
+  fuel
+  currency
+  product
+}
+
+model Region {
+  id             String   @id @default(cuid())
+  name           String   @unique
+  type           RegionType
+  parentRegionId String?
+  isActive       Boolean  @default(true)
+  children       Region[] @relation("RegionChildren")
+  parentRegion   Region?  @relation("RegionChildren", fields: [parentRegionId], references: [id])
+  priceEntries   PriceEntry[]
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+enum RegionType {
+  country
+  region
+  city
+}
+
+model PriceItem {
+  id          String       @id @default(cuid())
+  category    Category     @relation(fields: [categoryId], references: [id])
+  categoryId  String
+  name        String
+  description String?
+  unit        String
+  brand       String?
+  providerName String?
+  isActive    Boolean      @default(true)
+  priceEntries PriceEntry[]
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+}
+
+model PriceEntry {
+  id                String            @id @default(cuid())
+  priceItem         PriceItem         @relation(fields: [priceItemId], references: [id])
+  priceItemId       String
+  region            Region            @relation(fields: [regionId], references: [id])
+  regionId          String
+  providerName      String?
+  priceMin          Float?
+  priceAvg          Float?
+  priceMax          Float?
+  currency          String
+  priceType         String
+  qualificationLevel QualificationLevel?
+  sourceType        String?
+  sourceConfidence  Int?              @default(50)
+  dateCollected     DateTime          @default(now())
+  status            EntryStatus       @default(pending)
+  createdAt         DateTime          @default(now())
+  updatedAt         DateTime          @updatedAt
+}
+
+enum QualificationLevel {
+  beginner
+  medium
+  experienced
+  premium
+}
+
+enum EntryStatus {
+  pending
+  live
+  recent
+  old
+  review
+}
+
+model UserSubmission {
+  id             String      @id @default(cuid())
+  categoryType   CategoryType
+  itemName       String
+  regionId       String
+  submittedPrice Float
+  priceType      String
+  sourceNote     String?
+  noteOptional   String?
+  contactOptional String?
+  status         EntryStatus @default(pending)
+  createdAt      DateTime    @default(now())
+  updatedAt      DateTime    @updatedAt
+}

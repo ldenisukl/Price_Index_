@@ -1,0 +1,30 @@
+{
+  "lastRun": "2026-05-20T11:55:27.000Z",
+  "success": false,
+  "results": [
+    {
+      "url": "https://www.maib.md/",
+      "provider": "MAIB",
+      "rates": {
+        "EUR": 20.06,
+        "USD": 17.24
+      }
+    },
+    {
+      "url": "https://micb.md/",
+      "provider": "MICB",
+      "rates": {
+        "EUR": 20.07,
+        "USD": 17.25
+      }
+    },
+    {
+      "url": "https://www.curs.md/ro/curs_valutar_banci",
+      "provider": "CursMD",
+      "rows": []
+    }
+  ],
+  "errors": [
+    "Request failed with status code 404"
+  ]
+}
