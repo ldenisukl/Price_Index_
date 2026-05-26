@@ -1,30 +1,3251 @@
 {
-  "lastRun": "2026-05-20T11:55:27.000Z",
+  "lastRun": "2026-05-25T11:27:51.134Z",
   "success": false,
   "results": [
     {
       "url": "https://www.maib.md/",
       "provider": "MAIB",
-      "rates": {
-        "EUR": 20.06,
-        "USD": 17.24
-      }
+      "rows": [
+        {
+          "provider": "MAIB",
+          "rates": {
+            "EUR": {
+              "buy": 20.11,
+              "sell": 20.29
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.45
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.5
+            },
+            "RON": {
+              "buy": 3.78,
+              "sell": 3.92
+            }
+          },
+          "providerType": "bank",
+          "location": "Moldova"
+        }
+      ]
     },
     {
       "url": "https://micb.md/",
       "provider": "MICB",
-      "rates": {
-        "EUR": 20.07,
-        "USD": 17.25
-      }
+      "rows": [
+        {
+          "provider": "MICB",
+          "rates": {
+            "EUR": {
+              "buy": 19.95,
+              "sell": 20.29
+            },
+            "USD": {
+              "buy": 17.2,
+              "sell": 17.43
+            },
+            "GBP": {
+              "buy": 23,
+              "sell": 23.5
+            },
+            "RON": {
+              "buy": 3.77,
+              "sell": 3.91
+            }
+          },
+          "providerType": "bank",
+          "location": "Moldova"
+        }
+      ]
     },
     {
       "url": "https://www.curs.md/ro/curs_valutar_banci",
       "provider": "CursMD",
-      "rows": []
+      "rows": [
+        {
+          "provider": "Banca Nationala",
+          "rates": {
+            "EUR": {
+              "buy": 20.1674,
+              "sell": 20.1674
+            },
+            "USD": {
+              "buy": 17.3917,
+              "sell": 17.3917
+            },
+            "GBP": {
+              "buy": 23.3438,
+              "sell": 23.3438
+            },
+            "RON": {
+              "buy": 3.8421,
+              "sell": 3.8421
+            }
+          },
+          "badge": "BNM",
+          "providerType": "bnm",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "1",
+          "note": "1"
+        },
+        {
+          "provider": "Comerțbank",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.25
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.45
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.9
+            }
+          },
+          "badge": "Bancă",
+          "providerType": "bank",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "2",
+          "note": "2"
+        },
+        {
+          "provider": "Energbank",
+          "rates": {
+            "EUR": {
+              "buy": 20.14,
+              "sell": 20.27
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.42
+            },
+            "GBP": {
+              "buy": 22.5,
+              "sell": 23.5
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.89
+            }
+          },
+          "badge": "Bancă",
+          "providerType": "bank",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "2",
+          "note": "2"
+        },
+        {
+          "provider": "EuroCreditBank",
+          "rates": {
+            "EUR": {
+              "buy": 20.09,
+              "sell": 20.25
+            },
+            "USD": {
+              "buy": 17.23,
+              "sell": 17.43
+            },
+            "GBP": {
+              "buy": 23,
+              "sell": 23.4
+            },
+            "RON": {
+              "buy": 3.77,
+              "sell": 3.87
+            }
+          },
+          "badge": "Bancă",
+          "providerType": "bank",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Ismail 33, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Eximbank",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.26
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.42
+            },
+            "GBP": {
+              "buy": 23.15,
+              "sell": 23.45
+            },
+            "RON": {
+              "buy": 3.79,
+              "sell": 3.89
+            }
+          },
+          "badge": "Bancă",
+          "providerType": "bank",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "bd. Ştefan cel Mare şi Sfânt 171/1, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "FinComBank",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.28
+            },
+            "USD": {
+              "buy": 17.27,
+              "sell": 17.44
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.5
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.9
+            }
+          },
+          "badge": "Bancă",
+          "providerType": "bank",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "4",
+          "note": "4"
+        },
+        {
+          "provider": "maib",
+          "rates": {
+            "EUR": {
+              "buy": 20.11,
+              "sell": 20.29
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.45
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.5
+            },
+            "RON": {
+              "buy": 3.78,
+              "sell": 3.92
+            }
+          },
+          "badge": "Bancă",
+          "providerType": "bank",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "2",
+          "note": "2"
+        },
+        {
+          "provider": "Moldindconbank",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.29
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.43
+            },
+            "GBP": {
+              "buy": 23,
+              "sell": 23.5
+            },
+            "RON": {
+              "buy": 3.77,
+              "sell": 3.91
+            }
+          },
+          "badge": "Bancă",
+          "providerType": "bank",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Armenească 38, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "OTP Bank",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.3
+            },
+            "USD": {
+              "buy": 17.27,
+              "sell": 17.46
+            },
+            "GBP": {
+              "buy": 23.21,
+              "sell": 23.8
+            }
+          },
+          "badge": "Bancă",
+          "providerType": "bank",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "bd. Ștefan cel Mare și Sfânt 81A, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Victoriabank",
+          "rates": {
+            "EUR": {
+              "buy": 20.11,
+              "sell": 20.3
+            },
+            "USD": {
+              "buy": 17.2,
+              "sell": 17.45
+            },
+            "GBP": {
+              "buy": 23.22,
+              "sell": 23.6
+            },
+            "RON": {
+              "buy": 3.78,
+              "sell": 3.92
+            }
+          },
+          "badge": "Bancă",
+          "providerType": "bank",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. 31 August 1989 141, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "aBANKnotes 1 (Everest)",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.18
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.31
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.29
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.87
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Vasile Alecsandri 143, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "aBANKnotes 2 (C.C. Atlantic)",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.2
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.29
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.87
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Armenească 51a (C.C. Atlantic), mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "aBANKnotes 3",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.2
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.29
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.87
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Armenească 53, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "AClio",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.16
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.29
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.23
+            },
+            "RON": {
+              "buy": 3.84,
+              "sell": 3.86
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Mitropolit Gavriil Bănulescu-Bodoni 43, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Activ Prim",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.2
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.28
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.88
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Armeneasca 48/1, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Adalan-Com",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.2
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.28
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.88
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "bd. Ștefan cel Mare și Sfânt 126 (mag. Bucuria), mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Angelex Exchange",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.19
+            },
+            "USD": {
+              "buy": 17.23,
+              "sell": 17.3
+            },
+            "GBP": {
+              "buy": 23.02,
+              "sell": 23.25
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.88
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "24/7",
+          "note": "24/7"
+        },
+        {
+          "provider": "Armetis-Grup",
+          "rates": {
+            "EUR": {
+              "buy": 20.1,
+              "sell": 20.16
+            },
+            "USD": {
+              "buy": 17.23,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.12,
+              "sell": 23.24
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.88
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Mitropolit Varlaam 63, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Armetis-Grup Sucursala 1",
+          "rates": {
+            "EUR": {
+              "buy": 20.14,
+              "sell": 20.18
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.25
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.87
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Uzinelor 6/A, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Armetis-Grup Sucursala 2",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.18
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.33
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.25
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.88
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Ismail 86 (of. 120), mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Armetis-Grup Sucursala 3",
+          "rates": {
+            "EUR": {
+              "buy": 20.1,
+              "sell": 20.16
+            },
+            "USD": {
+              "buy": 17.23,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.12,
+              "sell": 23.24
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.98
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Tighina 44, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Armetis-Grup Sucursala 5",
+          "rates": {
+            "EUR": {
+              "buy": 20.1,
+              "sell": 20.16
+            },
+            "USD": {
+              "buy": 17.23,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.12,
+              "sell": 23.24
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.88
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Mitropolit Varlaam 63 (colț cu str. Tighina), mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Avada Invest Centru",
+          "rates": {
+            "EUR": {
+              "buy": 20.1,
+              "sell": 20.16
+            },
+            "USD": {
+              "buy": 17.23,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.12,
+              "sell": 23.24
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.88
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "strada Tighina 57 (poarta Pieței Centrale din str. Tighina, centrul comercial Aviv), mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Avada Invest Ciocana",
+          "rates": {
+            "EUR": {
+              "buy": 20.11,
+              "sell": 20.21
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.34
+            },
+            "GBP": {
+              "buy": 23.14,
+              "sell": 23.25
+            },
+            "RON": {
+              "buy": 3.82,
+              "sell": 3.92
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Ginta Latină 18, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Avada Invest Filiala 1",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.27
+            },
+            "USD": {
+              "buy": 17.22,
+              "sell": 17.36
+            },
+            "GBP": {
+              "buy": 23.12,
+              "sell": 23.32
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.92
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "ul Hîncești",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Chișinăului 8 (ap. 48), mun. Hîncești, r-ul Hîncești",
+          "note": ""
+        },
+        {
+          "provider": "Avada Invest Filiala 10",
+          "rates": {
+            "EUR": {
+              "buy": 20.1,
+              "sell": 20.21
+            },
+            "USD": {
+              "buy": 17.24,
+              "sell": 17.34
+            },
+            "GBP": {
+              "buy": 23.12,
+              "sell": 23.25
+            },
+            "RON": {
+              "buy": 3.82,
+              "sell": 3.92
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "24/7",
+          "note": "24/7"
+        },
+        {
+          "provider": "Avada Invest Filiala 11",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.27
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.36
+            },
+            "GBP": {
+              "buy": 23.12,
+              "sell": 23.32
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.92
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "ul Briceni",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Mihail Frunze 1 (În incinta magazinului Family, la intrarea în piață), or. Lipcani, r-ul Briceni",
+          "note": ""
+        },
+        {
+          "provider": "Avada Invest Filiala 12",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.25
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.42
+            },
+            "GBP": {
+              "buy": 23.1,
+              "sell": 23.25
+            },
+            "RON": {
+              "buy": 3.84,
+              "sell": 3.94
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "ul Edineț",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Independenței 102/1 (magazinul de flori Imperia), mun. Edineț, r-ul Edineț",
+          "note": ""
+        },
+        {
+          "provider": "Avada Invest Filiala 13",
+          "rates": {
+            "EUR": {
+              "buy": 20.11,
+              "sell": 20.25
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.42
+            },
+            "GBP": {
+              "buy": 23.1,
+              "sell": 23.25
+            },
+            "RON": {
+              "buy": 3.84,
+              "sell": 3.94
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "ul Edineț",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. 31 August 1989 8/b (în incinta magazinului Local), mun. Edineț, r-ul Edineț",
+          "note": ""
+        },
+        {
+          "provider": "Avada Invest Filiala 14",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.26
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.38
+            },
+            "GBP": {
+              "buy": 23.12,
+              "sell": 23.3
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.92
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "ul Florești",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. 31 August 1989 49 (lângă magazinul BUCURIA), or. Florești, r-ul Florești",
+          "note": ""
+        },
+        {
+          "provider": "Avada Invest Filiala 2",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.18
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.37
+            },
+            "GBP": {
+              "buy": 23.12,
+              "sell": 23.31
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.92
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "ul Căușeni",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Mihai Eminescu 29, or. Căușeni, r-ul Căușeni",
+          "note": ""
+        },
+        {
+          "provider": "Avada Invest Filiala 4",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.27
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.36
+            },
+            "GBP": {
+              "buy": 23.12,
+              "sell": 23.32
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.92
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "ul Briceni",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Prieteniei 6, or. Briceni, r-ul Briceni",
+          "note": ""
+        },
+        {
+          "provider": "Avada Invest Filiala 5",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.15
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.37
+            },
+            "GBP": {
+              "buy": 23.15,
+              "sell": 23.24
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.9
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Bălți",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Ștefan cel Mare 41/28, mun. Bălți",
+          "note": ""
+        },
+        {
+          "provider": "Avada Invest Filiala 6",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.27
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.36
+            },
+            "GBP": {
+              "buy": 23.12,
+              "sell": 23.32
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.92
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "ul Sîngerei",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Boris Glavan 2, or. Sîngerei, r-ul Sîngerei",
+          "note": ""
+        },
+        {
+          "provider": "Avada Invest Filiala 8",
+          "rates": {
+            "EUR": {
+              "buy": 20.11,
+              "sell": 20.27
+            },
+            "USD": {
+              "buy": 17.21,
+              "sell": 17.36
+            },
+            "GBP": {
+              "buy": 23.12,
+              "sell": 23.32
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.92
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "ul Hîncești",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Chișinăului 8/32 (în incinta magazinului PPT), mun. Hîncești, r-ul Hîncești",
+          "note": ""
+        },
+        {
+          "provider": "Avada Invest Gara Centrală",
+          "rates": {
+            "EUR": {
+              "buy": 20.1,
+              "sell": 20.16
+            },
+            "USD": {
+              "buy": 17.23,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.12,
+              "sell": 23.24
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.88
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "strada Tighina 59 (colț cu str. Varlaam, peronul Gării Centrale, la colțul magazinului Franzeluța), mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Bancassurance (Calea Ieșilor 14)",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.2
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.28
+            },
+            "RON": {
+              "buy": 3.82,
+              "sell": 3.86
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Calea Ieșilor 14, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Bancassurance (Trușeni)",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.2
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.28
+            },
+            "RON": {
+              "buy": 3.82,
+              "sell": 3.86
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Calea Ieșilor 103, com. Trușeni, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Bancassurance (Z-Magazin)",
+          "rates": {
+            "EUR": {
+              "buy": 20.11,
+              "sell": 20.21
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.34
+            },
+            "GBP": {
+              "buy": 23.14,
+              "sell": 23.25
+            },
+            "RON": {
+              "buy": 3.82,
+              "sell": 3.92
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "bd. Mircea cel Bătrân 41/B, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Bancassurance Calea Ieșilor 3/1",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.17
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.3
+            },
+            "GBP": {
+              "buy": 23.17,
+              "sell": 23.25
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.9
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Calea Ieșilor 3/1, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Bancassurance Piața Pruncul",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.2
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.28
+            },
+            "RON": {
+              "buy": 3.82,
+              "sell": 3.86
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Pietrariei 3, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Bancassurance Shoplandia",
+          "rates": {
+            "EUR": {
+              "buy": 20.11,
+              "sell": 20.21
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.34
+            },
+            "GBP": {
+              "buy": 23.14,
+              "sell": 23.25
+            },
+            "RON": {
+              "buy": 3.82,
+              "sell": 3.92
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Alecu Russo 20, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Blago",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.17
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.3
+            },
+            "GBP": {
+              "buy": 23.17,
+              "sell": 23.25
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.9
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Calea Ieșilor 5, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Blago Filiala 1",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.19
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.17,
+              "sell": 23.26
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.93
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "ul Edineț",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Independenței 77/A, mun. Edineț, r-ul Edineț",
+          "note": ""
+        },
+        {
+          "provider": "Blago Filiala 10",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.16
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.3
+            },
+            "GBP": {
+              "buy": 23.16,
+              "sell": 23.25
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.9
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Nicolai Zelinski 7/1, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Blago Filiala 11",
+          "rates": {
+            "EUR": {
+              "buy": 20.11,
+              "sell": 20.17
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.15,
+              "sell": 23.26
+            },
+            "RON": {
+              "buy": 3.78,
+              "sell": 3.9
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "ul Nisporeni",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Suveranității, or. Nisporeni, r-ul Nisporeni",
+          "note": ""
+        },
+        {
+          "provider": "Blago Filiala 12",
+          "rates": {
+            "EUR": {
+              "buy": 20.08,
+              "sell": 20.15
+            },
+            "USD": {
+              "buy": 17.23,
+              "sell": 17.3
+            },
+            "GBP": {
+              "buy": 23.14,
+              "sell": 23.25
+            },
+            "RON": {
+              "buy": 3.78,
+              "sell": 3.9
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Orhei",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Vasile Lupu 34, mun. Orhei, r-ul Orhei",
+          "note": ""
+        },
+        {
+          "provider": "Blago Filiala 13",
+          "rates": {
+            "EUR": {
+              "buy": 20.1,
+              "sell": 20.17
+            },
+            "USD": {
+              "buy": 17.23,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.15,
+              "sell": 23.26
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.9
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Ion Creangă 72, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Blago Filiala 14",
+          "rates": {
+            "EUR": {
+              "buy": 20.11,
+              "sell": 20.16
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.31
+            },
+            "GBP": {
+              "buy": 23.15,
+              "sell": 23.26
+            },
+            "RON": {
+              "buy": 3.78,
+              "sell": 3.9
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Rezina",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "bd. Alexei Șciusev 7, or. Rezina, r-ul Rezina",
+          "note": ""
+        },
+        {
+          "provider": "Blago Filiala 15",
+          "rates": {
+            "EUR": {
+              "buy": 20.1,
+              "sell": 20.16
+            },
+            "USD": {
+              "buy": 17.23,
+              "sell": 17.31
+            },
+            "GBP": {
+              "buy": 23.1,
+              "sell": 23.25
+            },
+            "RON": {
+              "buy": 3.78,
+              "sell": 3.9
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "ul Ștefan Vodă",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. 31 August 1989 7, or. Ștefan Vodă, r-ul Ștefan Vodă",
+          "note": ""
+        },
+        {
+          "provider": "Blago Filiala 16",
+          "rates": {
+            "EUR": {
+              "buy": 20.11,
+              "sell": 20.17
+            },
+            "USD": {
+              "buy": 17.23,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.15,
+              "sell": 23.26
+            },
+            "RON": {
+              "buy": 3.78,
+              "sell": 3.9
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Soroca",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Grigore Vieru 9 (nr. 2), mun. Soroca, r-ul Soroca",
+          "note": ""
+        },
+        {
+          "provider": "Blago Filiala 17",
+          "rates": {
+            "EUR": {
+              "buy": 20.08,
+              "sell": 20.15
+            },
+            "USD": {
+              "buy": 17.23,
+              "sell": 17.3
+            },
+            "GBP": {
+              "buy": 23.13,
+              "sell": 23.25
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.9
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Bălți",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Ștefan cel Mare și Sfânt 2/6, mun. Bălți",
+          "note": ""
+        },
+        {
+          "provider": "Blago Filiala 18",
+          "rates": {
+            "EUR": {
+              "buy": 20.11,
+              "sell": 20.17
+            },
+            "USD": {
+              "buy": 17.24,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.15,
+              "sell": 23.26
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.9
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Alecu Russo 1, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Blago Filiala 2",
+          "rates": {
+            "EUR": {
+              "buy": 20.11,
+              "sell": 20.17
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.15,
+              "sell": 23.26
+            },
+            "RON": {
+              "buy": 3.78,
+              "sell": 3.9
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "ul Glodeni",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Suveranității 9/2, or. Glodeni, r-ul Glodeni",
+          "note": ""
+        },
+        {
+          "provider": "Blago Filiala 20",
+          "rates": {
+            "EUR": {
+              "buy": 20.11,
+              "sell": 20.16
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.31
+            },
+            "GBP": {
+              "buy": 23.15,
+              "sell": 23.26
+            },
+            "RON": {
+              "buy": 3.78,
+              "sell": 3.9
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Ungheni",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Națională 18 (nr. 3), mun. Ungheni, r-ul Ungheni",
+          "note": ""
+        },
+        {
+          "provider": "Blago Filiala 22",
+          "rates": {
+            "EUR": {
+              "buy": 20.11,
+              "sell": 20.17
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.3
+            },
+            "GBP": {
+              "buy": 23.17,
+              "sell": 23.25
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.9
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Cahul",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. 31 August 1989 4A, mun. Cahul, r-ul Cahul",
+          "note": ""
+        },
+        {
+          "provider": "Blago Filiala 23",
+          "rates": {
+            "EUR": {
+              "buy": 20.08,
+              "sell": 20.15
+            },
+            "USD": {
+              "buy": 17.23,
+              "sell": 17.3
+            },
+            "GBP": {
+              "buy": 23.14,
+              "sell": 23.25
+            },
+            "RON": {
+              "buy": 3.78,
+              "sell": 3.9
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Orhei",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Vasile Lupu 23, nr. 17, mun. Orhei, r-ul Orhei",
+          "note": ""
+        },
+        {
+          "provider": "Blago Filiala 3",
+          "rates": {
+            "EUR": {
+              "buy": 20.1,
+              "sell": 20.17
+            },
+            "USD": {
+              "buy": 17.23,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.05,
+              "sell": 23.26
+            },
+            "RON": {
+              "buy": 3.78,
+              "sell": 3.9
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Socoleni 7, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Blago Filiala 6",
+          "rates": {
+            "EUR": {
+              "buy": 20.11,
+              "sell": 20.17
+            },
+            "USD": {
+              "buy": 17.23,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.15,
+              "sell": 23.26
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.9
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "șos. Hâncești 60/4, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Blago Filiala 7",
+          "rates": {
+            "EUR": {
+              "buy": 20.09,
+              "sell": 20.16
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.15,
+              "sell": 23.26
+            },
+            "RON": {
+              "buy": 3.78,
+              "sell": 3.9
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Ungheni",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Alessandro Bernardazzi , mun. Ungheni, r-ul Ungheni",
+          "note": ""
+        },
+        {
+          "provider": "Blago Filiala 8",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.21
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.33
+            },
+            "GBP": {
+              "buy": 23.15,
+              "sell": 23.27
+            },
+            "RON": {
+              "buy": 3.78,
+              "sell": 3.9
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "ul Drochia",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. 31 August 33, or. Drochia, r-ul Drochia",
+          "note": ""
+        },
+        {
+          "provider": "Blago Filiala 9",
+          "rates": {
+            "EUR": {
+              "buy": 20.05,
+              "sell": 20.15
+            },
+            "USD": {
+              "buy": 17.2,
+              "sell": 17.3
+            },
+            "GBP": {
+              "buy": 23.1,
+              "sell": 23.25
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.9
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Independenței 26/2, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Bonifar-com",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.17
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.29
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.26
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.87
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "bd. Ștefan cel Mare și Sfânt 132/100, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Bălți Prometeu",
+          "rates": {
+            "EUR": {
+              "buy": 20.06,
+              "sell": 20.15
+            },
+            "USD": {
+              "buy": 17.2,
+              "sell": 17.37
+            },
+            "GBP": {
+              "buy": 23.05,
+              "sell": 23.24
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.92
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Bălți",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Fеodor Dostoievski 16, mun. Bălți",
+          "note": ""
+        },
+        {
+          "provider": "Calisto NG",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.19
+            },
+            "USD": {
+              "buy": 17.24,
+              "sell": 17.29
+            },
+            "GBP": {
+              "buy": 23.17,
+              "sell": 23.25
+            },
+            "RON": {
+              "buy": 3.84,
+              "sell": 3.89
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Alecu Russo 1 (bloc A1), mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Casa Prima",
+          "rates": {
+            "EUR": {
+              "buy": 20.11,
+              "sell": 20.27
+            },
+            "USD": {
+              "buy": 17.21,
+              "sell": 17.36
+            },
+            "GBP": {
+              "buy": 23.12,
+              "sell": 23.32
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.92
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "ul Hîncești",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Chișinăului 8/A, mun. Hîncești, r-ul Hîncești",
+          "note": ""
+        },
+        {
+          "provider": "Casso",
+          "rates": {
+            "EUR": {
+              "buy": 20.1,
+              "sell": 20.16
+            },
+            "USD": {
+              "buy": 17.23,
+              "sell": 17.3
+            },
+            "GBP": {
+              "buy": 23.12,
+              "sell": 23.22
+            },
+            "RON": {
+              "buy": 3.82,
+              "sell": 3.87
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Constantin Brâncuși 3 (CC Plaza), mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Clio",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.2
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.28
+            },
+            "RON": {
+              "buy": 3.82,
+              "sell": 3.86
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "24/7",
+          "note": "24/7"
+        },
+        {
+          "provider": "Clio Filiala 1",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.2
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.28
+            },
+            "RON": {
+              "buy": 3.82,
+              "sell": 3.86
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "3",
+          "note": "3"
+        },
+        {
+          "provider": "Clio Filiala 3",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.2
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.28
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.87
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Mitropolit Gavriil Bănulescu-Bodoni 41, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Clio Filiala 4",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.2
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.28
+            },
+            "RON": {
+              "buy": 3.82,
+              "sell": 3.86
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Mitropolit Gavriil Bănulescu-Bodoni 45, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "CSV-Real Filiala Chișinău",
+          "rates": {
+            "EUR": {
+              "buy": 20.02,
+              "sell": 20.15
+            },
+            "USD": {
+              "buy": 17.13,
+              "sell": 17.29
+            },
+            "GBP": {
+              "buy": 23,
+              "sell": 23.25
+            },
+            "RON": {
+              "buy": 3.81,
+              "sell": 3.87
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "bd. Ștefan cel Mare și Sfânt 77 (colț cu str. Mihai Eminescu), mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Deghest",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.17
+            },
+            "USD": {
+              "buy": 17.24,
+              "sell": 17.3
+            },
+            "GBP": {
+              "buy": 23.05,
+              "sell": 23.22
+            },
+            "RON": {
+              "buy": 3.84,
+              "sell": 3.87
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Mitropolit Gavriil Bănulescu-Bodoni 43A, ap.11, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Deghest Filiala 1",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.17
+            },
+            "USD": {
+              "buy": 17.24,
+              "sell": 17.3
+            },
+            "GBP": {
+              "buy": 23.05,
+              "sell": 23.22
+            },
+            "RON": {
+              "buy": 3.84,
+              "sell": 3.87
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Tudor Vladimirescu 1A, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Deghest Filiala 2",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.17
+            },
+            "USD": {
+              "buy": 17.24,
+              "sell": 17.3
+            },
+            "GBP": {
+              "buy": 23.05,
+              "sell": 23.22
+            },
+            "RON": {
+              "buy": 3.84,
+              "sell": 3.87
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "bd. Decebal 99/E (of. 02), mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Euro Schimb",
+          "rates": {
+            "EUR": {
+              "buy": 20.1,
+              "sell": 20.19
+            },
+            "USD": {
+              "buy": 17.23,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.16,
+              "sell": 23.26
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.9
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Ion Creangă 49/2, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Exclusiv-Schimb",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.17
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.13,
+              "sell": 23.22
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.88
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Ismail 49 (of. 12), mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Exclusiv-Schimb Filiala 1",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.17
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.13,
+              "sell": 23.22
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.88
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Ismail 45, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Exclusiv-Schimb Filiala 2",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.17
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.13,
+              "sell": 23.22
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.88
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "bd. Ștefan cel Mare și Sfânt 8 (în incinta CC UNIC), mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Fedex-Plus",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.2
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.28
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.88
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Calea Moșilor 4, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "FinX",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.17
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.3
+            },
+            "GBP": {
+              "buy": 23.17,
+              "sell": 23.25
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.9
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Calea Ieșilor 1/A, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "FinX Filiala 1",
+          "rates": {
+            "EUR": {
+              "buy": 20.11,
+              "sell": 20.16
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.3
+            },
+            "GBP": {
+              "buy": 23.15,
+              "sell": 23.25
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.93
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Comrat",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Pobeda 101 (ap. 2), mun. Comrat, UTA Găgăuzia",
+          "note": ""
+        },
+        {
+          "provider": "FinX Filiala 2",
+          "rates": {
+            "EUR": {
+              "buy": 20.1,
+              "sell": 20.15
+            },
+            "USD": {
+              "buy": 17.23,
+              "sell": 17.3
+            },
+            "GBP": {
+              "buy": 23.13,
+              "sell": 23.25
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.9
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Bălți",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Ștefan cel Mare și Sfânt 8/5, mun. Bălți",
+          "note": ""
+        },
+        {
+          "provider": "Francunic",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.2
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.3
+            },
+            "GBP": {
+              "buy": 23.15,
+              "sell": 23.25
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.88
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Mitropolit Varlaam 46, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Franklin",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.2
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.15,
+              "sell": 23.26
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.88
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "bd. Moscova 9 (incinta magazin Moldmart), mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Ghestrat",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.17
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.29
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.26
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.87
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "bd. Ștefan cel Mare și Sfânt 65 (mag.",
+          "note": ""
+        },
+        {
+          "provider": "Grafitis",
+          "rates": {
+            "EUR": {
+              "buy": 20.11,
+              "sell": 20.26
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.38
+            },
+            "GBP": {
+              "buy": 23.11,
+              "sell": 23.3
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.92
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "ul Florești",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Gării 2 (nr.11), or. Florești, r-ul Florești",
+          "note": ""
+        },
+        {
+          "provider": "Grafitis Filiala 1",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.15
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.37
+            },
+            "GBP": {
+              "buy": 23.15,
+              "sell": 23.24
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.9
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Bălți",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Academicianul Nicolae Filip 2, mun. Bălți",
+          "note": ""
+        },
+        {
+          "provider": "Grafitis Filiala 2",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.26
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.38
+            },
+            "GBP": {
+              "buy": 23.12,
+              "sell": 23.3
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.92
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "ul Florești",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. 31 August 1989 40, or. Florești, r-ul Florești",
+          "note": ""
+        },
+        {
+          "provider": "Grafitis Filiala 3",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.15
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.37
+            },
+            "GBP": {
+              "buy": 23.15,
+              "sell": 23.24
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.9
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Bălți",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Decebal 26A, mun. Bălți",
+          "note": ""
+        },
+        {
+          "provider": "Lozcoz",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.2
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.28
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.88
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "bd. Ștefan cel Mare și Sfânt 124, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Macnotis",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.21
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.34
+            },
+            "GBP": {
+              "buy": 23.03,
+              "sell": 23.28
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.89
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "bd. Ștefan cel Mare și Sfânt 62, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Mațco Trade",
+          "rates": {
+            "EUR": {
+              "buy": 20,
+              "sell": 20.16
+            },
+            "USD": {
+              "buy": 17.1,
+              "sell": 17.3
+            },
+            "GBP": {
+              "buy": 23,
+              "sell": 23.28
+            },
+            "RON": {
+              "buy": 3.82,
+              "sell": 3.86
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. 60 ani ai Biruinţei 11, or. Cricova, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Milinex-com",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.16
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.29
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.26
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.87
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "bd. Ștefan cel Mare și Sfânt 132, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Milinex-Schimb",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.16
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.29
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.26
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.87
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "bd. Ștefan cel Mare și Sfânt 130, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Money Breeze",
+          "rates": {
+            "EUR": {
+              "buy": 20.1,
+              "sell": 20.19
+            },
+            "USD": {
+              "buy": 17.24,
+              "sell": 17.31
+            },
+            "GBP": {
+              "buy": 23.05,
+              "sell": 23.25
+            },
+            "RON": {
+              "buy": 3.82,
+              "sell": 3.86
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "bd. Ștefan cel Mare și Sfânt 136 (CC Gemeni), mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Nelcat Capital",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.19
+            },
+            "USD": {
+              "buy": 17.23,
+              "sell": 17.3
+            },
+            "GBP": {
+              "buy": 23.12,
+              "sell": 23.25
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.9
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Arborilor 19 (Avante Petrol), mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Nelcat Capital Filiala Kiev",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.2
+            },
+            "USD": {
+              "buy": 17.23,
+              "sell": 17.3
+            },
+            "GBP": {
+              "buy": 23.12,
+              "sell": 23.25
+            },
+            "RON": {
+              "buy": 3.84,
+              "sell": 3.89
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Kiev 7 (magazin Kaufland), mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Nelus-Grup",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.19
+            },
+            "USD": {
+              "buy": 17.24,
+              "sell": 17.29
+            },
+            "GBP": {
+              "buy": 23.17,
+              "sell": 23.25
+            },
+            "RON": {
+              "buy": 3.84,
+              "sell": 3.89
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Alecu Russo 1, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Nichi-schimb",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.2
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.28
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.88
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Pantelimon Halippa 12/1, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Oanța-Schimb",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.2
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.29
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.87
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Armenească 48, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Orion",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.2
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.28
+            },
+            "RON": {
+              "buy": 3.82,
+              "sell": 3.86
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Mitropolit Gavriil Bănulescu-Bodoni 43, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Partener-Plus",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.2
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.28
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.88
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Constantin Tănase 9, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Partener-Plus Filiala 1",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.2
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.28
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.88
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "bd. Moscova 11/1, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Partener-Plus Filiala 2",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.2
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.28
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.88
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "bd. Moscova 1/1, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Partener-Plus Filiala 3",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.2
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.28
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.88
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Constantin Tănase 6, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Partener-Plus Filiala 4",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.2
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.28
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.88
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "bd. Dacia 16/1, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "PRO-FX Schimb",
+          "rates": {
+            "EUR": {
+              "buy": 20.05,
+              "sell": 20.21
+            },
+            "USD": {
+              "buy": 17.15,
+              "sell": 17.3
+            },
+            "GBP": {
+              "buy": 23.03,
+              "sell": 23.25
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.91
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Onisifor Ghibu 7/2 (mag. Linella), mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "PRO-FX Schimb Filiala Râșcani",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.19
+            },
+            "USD": {
+              "buy": 17.24,
+              "sell": 17.29
+            },
+            "GBP": {
+              "buy": 23.15,
+              "sell": 23.25
+            },
+            "RON": {
+              "buy": 3.84,
+              "sell": 3.9
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Kiev 16/1 (mag. LOCAL), mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Protanir",
+          "rates": {
+            "EUR": {
+              "buy": 20.12,
+              "sell": 20.16
+            },
+            "USD": {
+              "buy": 17.25,
+              "sell": 17.3
+            },
+            "GBP": {
+              "buy": 22.21,
+              "sell": 23.22
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.87
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "bd. Ștefan cel Mare și Sfânt 128, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Ramforinh",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.2
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.24
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.87
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "bd. Ștefan cel Mare și Sfânt 126A (colț cu str. Armenească), mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Rizavic",
+          "rates": {
+            "EUR": {
+              "buy": 20.1,
+              "sell": 20.17
+            },
+            "USD": {
+              "buy": 17.21,
+              "sell": 17.29
+            },
+            "GBP": {
+              "buy": 23.12,
+              "sell": 23.23
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.87
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "24/7",
+          "note": "24/7"
+        },
+        {
+          "provider": "Schimb Impact",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.2
+            },
+            "USD": {
+              "buy": 17.24,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.05,
+              "sell": 23.23
+            },
+            "RON": {
+              "buy": 3.82,
+              "sell": 3.9
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Kiev 11, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Trifaux",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.2
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.28
+            },
+            "RON": {
+              "buy": 3.82,
+              "sell": 3.86
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Bulgară 47, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Vadisan",
+          "rates": {
+            "EUR": {
+              "buy": 20.05,
+              "sell": 20.15
+            },
+            "USD": {
+              "buy": 17.2,
+              "sell": 17.3
+            },
+            "GBP": {
+              "buy": 22.23,
+              "sell": 23.27
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.87
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Alexandru Pușkin 32 (CC SunCity), mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Valtix (Mercedes Centru)",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.2
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.2,
+              "sell": 23.28
+            },
+            "RON": {
+              "buy": 3.82,
+              "sell": 3.86
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Academician Sergiu Rădăuțanu 1, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Valuta Elit",
+          "rates": {
+            "EUR": {
+              "buy": 20.14,
+              "sell": 20.17
+            },
+            "USD": {
+              "buy": 17.2,
+              "sell": 17.28
+            },
+            "GBP": {
+              "buy": 22.23,
+              "sell": 23.25
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.87
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "24/7",
+          "note": "24/7"
+        },
+        {
+          "provider": "Vandis-Schimb",
+          "rates": {
+            "EUR": {
+              "buy": 20.13,
+              "sell": 20.16
+            },
+            "USD": {
+              "buy": 17.26,
+              "sell": 17.3
+            },
+            "GBP": {
+              "buy": 23.1,
+              "sell": 23.26
+            },
+            "RON": {
+              "buy": 3.83,
+              "sell": 3.87
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "bd. Ștefan cel Mare și Sfânt 130, mun. Chișinău",
+          "note": ""
+        }
+      ]
     }
   ],
   "errors": [
-    "Request failed with status code 404"
+    "Request failed with status code 404",
+    "\nInvalid `prisma.provider.upsert()` invocation:\n\n{\n  where: {\n    name_location: {\n      name: \"Ghestrat\",\n+     location: String\n    }\n  },\n  create: {\n    name: \"Ghestrat\",\n    type: \"csv\",\n    location: undefined\n  },\n  update: {\n    type: \"csv\",\n    location: undefined\n  }\n}\n\nArgument `location` must not be null."
   ]
 }

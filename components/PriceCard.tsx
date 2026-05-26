@@ -55,7 +55,6 @@ function MiniChart({ data }: { data?: number[] }) {
 }
 
 export default function PriceCard({ item }: { item: PriceItem }) {
-  const trendIsPositive = item.trend > 0;
   const colors = statusColor[item.status];
 
   return (
@@ -68,7 +67,9 @@ export default function PriceCard({ item }: { item: PriceItem }) {
             </span>
           </div>
           <p className="text-xs uppercase tracking-wider text-slate-500">{item.subtitle}</p>
-          {item.provider === 'BNM' ? (
+          {item.providerType ? (
+            <p className="text-xs font-semibold text-slate-400">{item.providerType}{item.location ? ` · ${item.location}` : ''}</p>
+          ) : item.provider === 'BNM' ? (
             <p className="text-xs font-semibold text-emerald-300">Curs BNM</p>
           ) : null}
           <h3 className="text-xl font-semibold text-white">{item.title}</h3>
@@ -80,14 +81,22 @@ export default function PriceCard({ item }: { item: PriceItem }) {
         </button>
       </div>
 
-      <div className="mb-4 space-y-2">
-        <p className="text-3xl font-bold text-white">{item.price}</p>
-        <div className="flex items-center gap-2">
-          <span className={`text-sm font-semibold ${trendIsPositive ? 'text-emerald-400' : 'text-red-400'}`}>
-            {trendIsPositive ? '↗' : '↘'} {item.trendPercent}
-          </span>
+      {(item.buyPrice || item.sellPrice) && (
+        <div className="mb-4 grid grid-cols-2 gap-3 rounded-2xl border border-white/10 bg-slate-900/80 p-3">
+          {item.buyPrice && (
+            <div>
+              <p className="text-[0.65rem] uppercase tracking-[0.2em] text-slate-500">Cumpărare</p>
+              <p className="mt-2 text-sm font-semibold text-emerald-300">{item.buyPrice}</p>
+            </div>
+          )}
+          {item.sellPrice && (
+            <div>
+              <p className="text-[0.65rem] uppercase tracking-[0.2em] text-slate-500">Vânzare</p>
+              <p className="mt-2 text-sm font-semibold text-amber-300">{item.sellPrice}</p>
+            </div>
+          )}
         </div>
-      </div>
+      )}
 
       {item.chartData && (
         <div className="mb-4 h-10">

@@ -46,6 +46,26 @@ enum RegionType {
   city
 }
 
+enum ProviderType {
+  bank
+  exchange
+  bnm
+  csv
+  other
+}
+
+model Provider {
+  id           String       @id @default(cuid())
+  name         String
+  type         ProviderType
+  location     String?
+  priceEntries PriceEntry[]
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+
+  @@unique([name, location])
+}
+
 model PriceItem {
   id          String       @id @default(cuid())
   category    Category     @relation(fields: [categoryId], references: [id])
@@ -67,6 +87,8 @@ model PriceEntry {
   priceItemId       String
   region            Region            @relation(fields: [regionId], references: [id])
   regionId          String
+  provider          Provider?         @relation(fields: [providerId], references: [id], onDelete: SetNull)
+  providerId        String?
   providerName      String?
   priceMin          Float?
   priceAvg          Float?

@@ -1,6 +1,6 @@
 'use client';
 
-import { type FormEvent, useMemo, useState } from 'react';
+import { type FormEvent, useState } from 'react';
 import { aiExpectations } from '@/lib/data';
 
 type ChatMessage = {
@@ -25,10 +25,6 @@ export default function AiChat() {
   const [query, setQuery] = useState('');
   const [messages, setMessages] = useState<ChatMessage[]>(defaultMessages);
   const [error, setError] = useState('');
-
-  const fallbackAnswer = useMemo(() => {
-    return aiExpectations.find((item) => query.toLowerCase().includes(item.question.toLowerCase()))?.answer;
-  }, [query]);
 
   const handleAsk = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();

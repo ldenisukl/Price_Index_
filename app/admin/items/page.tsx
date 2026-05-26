@@ -46,7 +46,7 @@ export default function AdminItemsPage() {
         setCategories(categoriesData.categories ?? []);
         setItems(itemsData.items ?? []);
         setForm((prev) => ({ ...prev, categoryId: categoriesData.categories?.[0]?.id ?? '' }));
-      } catch (err) {
+      } catch {
         setError('Nu am putut încărca itemurile sau categoriile.');
       } finally {
         setLoading(false);
@@ -75,8 +75,8 @@ export default function AdminItemsPage() {
       setItems([result.item, ...items]);
       setForm({ name: '', categoryId: categories[0]?.id ?? '', description: '', unit: '', providerName: '' });
       setStatus('Item creat cu succes.');
-    } catch (err) {
-      setStatus((err as Error).message);
+    } catch (error) {
+      setStatus(error instanceof Error ? error.message : 'Eroare la creare item');
     }
   };
 
@@ -133,10 +133,10 @@ export default function AdminItemsPage() {
       setItems(items.filter((item) => item.id !== itemId));
       setStatus('✅ Item șters cu succes.');
       console.log('Item deleted successfully, updated items list');
-    } catch (err) {
-      const errorMsg = (err as Error).message;
+    } catch (error) {
+      const errorMsg = error instanceof Error ? error.message : 'Eroare la ștergere item';
       setStatus(`❌ ${errorMsg}`);
-      console.error('Delete exception:', err);
+      console.error('Delete exception:', error);
     }
   };
 

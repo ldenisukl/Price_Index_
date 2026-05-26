@@ -1,0 +1,19 @@
+[Unit]
+Description=Price Index Scraper (node-cron)
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/path/to/Price_Index
+Environment=NODE_ENV=production
+# Set your DATABASE_URL and other secrets here or use a drop-in env file
+# Environment=DATABASE_URL=postgresql://user:pass@host:5432/dbname
+ExecStart=/usr/bin/bash -lc 'cd /path/to/Price_Index && npm run scrape:cron'
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

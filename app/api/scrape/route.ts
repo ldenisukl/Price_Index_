@@ -10,25 +10,24 @@ export async function GET() {
   try {
     const data = await fs.readFile(STATUS_FILE, 'utf-8');
     return NextResponse.json(JSON.parse(data));
-  } catch (err) {
+  } catch {
     return NextResponse.json({ message: 'No status available' }, { status: 404 });
   }
 }
 
 export async function POST() {
-  // Prevent concurrent runs
   try {
     await fs.access(LOCK_FILE);
     return NextResponse.json({ message: 'Scrape already running' }, { status: 409 });
-  } catch (e) {
+  } catch {
     // lock does not exist
   }
 
-  // run the scraper
   try {
     const res = await runAll();
     return NextResponse.json(res);
-  } catch (err: any) {
-    return NextResponse.json({ error: err?.message || String(err) }, { status: 500 });
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }

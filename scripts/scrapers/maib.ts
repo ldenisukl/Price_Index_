@@ -14,32 +14,47 @@ export async function scrapeMAIB(): Promise<ScrapeResult> {
     await new Promise((resolve) => setTimeout(resolve, 2500));
 
     const rates = await page.evaluate(() => {
-      const result: Record<string, number> = {};
-
-      // Target the specific exchange rate table
+      const result: Record<string, { buy?: number; sell?: number }> = {};
       const table = document.querySelector("table.exchange__table");
       if (!table) return result;
 
       const rows = table.querySelectorAll("tbody tr");
-
       rows.forEach((row) => {
         const cells = row.querySelectorAll("td");
-        if (cells.length < 2) return;
+        if (cells.length < 3) return;
 
-        const currencyCode = cells[0]?.innerText?.trim() || "";
-        const buyValue = cells[1]?.innerText?.trim() || "";
+        const currencyCode = cells[0]?.textContent?.trim()?.toUpperCase();
+        const buyValue = cells[1]?.textContent?.trim();
+        const sellValue = cells[2]?.textContent?.trim();
 
-        if ((currencyCode === "EUR" || currencyCode === "USD") && buyValue) {
-          const val = parseFloat(buyValue.replace(",", "."));
-          if (val && val > 5 && val < 50) {
-            result[currencyCode] = val;
-          }
+        if (!currencyCode || !["EUR", "USD", "GBP", "RON"].includes(currencyCode)) {
+          return;
+        }
+
+        const buy = buyValue ? Number.parseFloat(buyValue.replace(",", ".")) : undefined;
+        const sell = sellValue ? Number.parseFloat(sellValue.replace(",", ".")) : undefined;
+
+        if ((buy && buy > 0) || (sell && sell > 0)) {
+          result[currencyCode] = {
+            buy: Number.isFinite(buy) ? buy : undefined,
+            sell: Number.isFinite(sell) ? sell : undefined
+          };
         }
       });
 
       return result;
     });
-    return { provider, url, rates };
+
+    return {
+      provider,
+      url,
+      rows: [{
+        provider,
+        rates,
+        providerType: "bank",
+        location: "Moldova"
+      }]
+    };
   } finally {
     await browser.close();
   }

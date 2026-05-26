@@ -9,22 +9,20 @@ export async function scrapeBNM(): Promise<ScrapeResult> {
   const urlNoDate = `https://www.bnm.md/en/official_exchange_rates?get_xml=1`;
 
   let res;
-  try {
-    res = await axios.get(urlWithDate, {
-      responseType: "text",
-      headers: { 'User-Agent': 'Mozilla/5.0 (scraper)' }
-    });
-  } catch (err: any) {
-    // If date-specific endpoint returns 404, try the endpoint without date
-    if (err?.response?.status === 404) {
-      try {
-        res = await axios.get(urlNoDate, { responseType: 'text', headers: { 'User-Agent': 'Mozilla/5.0 (scraper)' } });
-      } catch (err2: any) {
-        throw err2;
-      }
-    } else {
-      throw err;
+  const candidates = [urlWithDate, urlNoDate, urlWithDate.replace('/en/', '/'), urlNoDate.replace('/en/', '/')];
+  let lastErr: any = null;
+  for (const candidate of candidates) {
+    try {
+      const r = await axios.get(candidate, { responseType: 'text', headers: { 'User-Agent': 'Mozilla/5.0 (scraper)' } });
+      res = r;
+      break;
+    } catch (err: any) {
+      lastErr = err;
+      // continue to next candidate on 404 or other network errors
     }
+  }
+  if (!res) {
+    throw lastErr;
   }
 
   const parsed = await xml2js.parseStringPromise(res.data);

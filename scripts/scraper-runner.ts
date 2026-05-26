@@ -5,7 +5,7 @@ import { scrapeBNM } from './scrapers/bnm.ts';
 import { scrapeMAIB } from './scrapers/maib.ts';
 import { scrapeMICB } from './scrapers/micb.ts';
 import { scrapeCursMd } from './scrapers/cursmd.ts';
-import type { ScrapeResult } from './scrapers/utils.ts';
+import type { ScrapeResult, ProviderType } from './scrapers/utils.ts';
 import { prisma } from '../lib/prisma.ts';
 
 const LOCK_FILE = path.resolve(process.cwd(), 'scripts', 'scrape.lock');
@@ -33,9 +33,46 @@ async function ensureRegionMoldova() {
   return region;
 }
 
-async function storeRate(provider: string, code: string, avg: number, min?: number, max?: number) {
+const normalizeProviderType = (value: string | undefined): ProviderType => {
+  const normalized = (value ?? '').toLowerCase();
+  if (/\bbnm\b/.test(normalized)) return 'bnm';
+  if (/\bcasa|change|chimb|câș|casa de schimb|cash/.test(normalized)) return 'exchange';
+  if (/\bcsv\b/.test(normalized)) return 'csv';
+  if (/\bbanc|bank|banca\b/.test(normalized)) return 'bank';
+  return 'other';
+};
+
+async function ensureProvider(name: string, type?: string, location?: string) {
+  if (!name) return null;
+  const providerType = normalizeProviderType(type || name);
+  const providerLocation = location?.trim() || null;
+
+  const prismaWithProvider = prisma as unknown as { provider: any };
+  const provider = await prismaWithProvider.provider.upsert({
+    where: {
+      name_location: {
+        name,
+        location: providerLocation
+      }
+    },
+    create: {
+      name,
+      type: providerType,
+      location: providerLocation || undefined
+    },
+    update: {
+      type: providerType,
+      location: providerLocation || undefined
+    }
+  });
+
+  return provider;
+}
+
+async function storeRate(provider: string, code: string, avg: number, min?: number, max?: number, providerType?: string, location?: string) {
   const item = await ensureCurrencyItem(code);
   const region = await ensureRegionMoldova();
+  const providerRecord = await ensureProvider(provider, providerType, location);
 
   const priceMin = min ?? avg;
   const priceMax = max ?? avg;
@@ -51,8 +88,8 @@ async function storeRate(provider: string, code: string, avg: number, min?: numb
     where: {
       priceItemId: item.id,
       regionId: region.id,
-      providerName: provider,
       priceType,
+      ...(providerRecord ? { providerId: providerRecord.id } : { providerName: provider }) ,
       dateCollected: {
         gte: todayStart,
         lt: tomorrowStart
@@ -69,7 +106,9 @@ async function storeRate(provider: string, code: string, avg: number, min?: numb
         priceMin: Math.min(previousMin, priceMin),
         priceAvg,
         priceMax: Math.max(previousMax, priceMax),
-        status: 'live'
+        status: 'live',
+        providerId: providerRecord?.id ?? existingEntry.providerId,
+        providerName: provider
       }
     });
     return;
@@ -78,6 +117,7 @@ async function storeRate(provider: string, code: string, avg: number, min?: numb
   await prisma.priceEntry.create({ data: {
     priceItemId: item.id,
     regionId: region.id,
+    providerId: providerRecord?.id,
     providerName: provider,
     priceMin,
     priceAvg,
@@ -102,7 +142,7 @@ async function runAll() {
 
   await fs.writeFile(LOCK_FILE, JSON.stringify({ pid: process.pid, startedAt: new Date().toISOString() }));
 
-  const results: Array<{ url: string; provider: string; rates?: Record<string, number>; rows?: Array<{ provider: string; rates: Record<string, { buy?: number; sell?: number }> }> }> = [];
+  const results: Array<{ url: string; provider: string; rates?: Record<string, number>; rows?: ScrapeResult['rows'] }> = [];
   const errors: string[] = [];
 
   const scrapers: Array<() => Promise<ScrapeResult>> = [scrapeBNM, scrapeMAIB, scrapeMICB, scrapeCursMd];
@@ -131,7 +171,7 @@ async function runAll() {
             const sell = ratePair.sell;
             const avg = buy ?? sell;
             if (avg && avg > 0) {
-              await storeRate(row.provider, code, avg, buy, sell);
+              await storeRate(row.provider, code, avg, buy, sell, row.providerType, row.location);
               console.log(`✓ Stored ${code}/MDL = ${avg} (from ${row.provider})`);
             }
           }

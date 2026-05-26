@@ -2,9 +2,15 @@
 
 import { useEffect, useMemo, useState } from 'react';
 
-const NETWORKS = ['Rompetrol', 'Lukoil', 'Bemol', 'TLX', 'Avante', 'Vento', 'Petrom', 'NOW OIL'] as const;
-
-type NetworkKey = (typeof NETWORKS)[number];
+type NetworkKey =
+  | 'Rompetrol'
+  | 'Lukoil'
+  | 'Bemol'
+  | 'TLX'
+  | 'Avante'
+  | 'Vento'
+  | 'Petrom'
+  | 'NOW OIL';
 
 type FuelAverage = {
   network: NetworkKey;
@@ -31,7 +37,8 @@ export default function FuelPricesSection() {
 
       try {
         const response = await fetch('/api/fuel-prices', {
-          signal: controller.signal
+          signal: controller.signal,
+          cache: 'no-store'
         });
 
         if (!response.ok) {
@@ -42,7 +49,8 @@ export default function FuelPricesSection() {
         const data = Array.isArray(json?.data) ? (json.data as FuelAverage[]) : [];
         setAverages(data);
       } catch (err) {
-        if ((err as any).name !== 'AbortError') {
+        const error = err as Error & { name?: string };
+        if (error.name !== 'AbortError') {
           setError('Nu s-au putut încărca prețurile combustibililor.');
         }
       } finally {

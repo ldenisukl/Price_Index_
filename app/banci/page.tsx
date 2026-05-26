@@ -1,6 +1,6 @@
+import * as fs from 'fs/promises';
+import * as path from 'path';
 import Link from 'next/link';
-
-import { prisma } from '@/lib/prisma';
 
 type BankRate = {
   buy: string;
@@ -26,83 +26,115 @@ type BankRow = {
 
 const supportedCurrencies: SupportedCurrency[] = ['EUR', 'USD', 'GBP', 'RON'];
 
-const supportedPriceTypes = supportedCurrencies.map((currency) => `${currency}/MDL`);
+const STATUS_FILE = path.resolve(process.cwd(), 'scripts', 'last-scrape.json');
 
 const formatValue = (value: number | null | undefined) => {
   if (value == null) return undefined;
   return value.toLocaleString('ro-RO', { minimumFractionDigits: 2, maximumFractionDigits: 4 });
 };
 
-const normalizeProviderSlug = (provider: string) =>
-  provider
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '')
-    .replace(/^office/, '');
+type RawCursMdRow = {
+  provider: string;
+  subtitle?: string;
+  badge?: string;
+  providerType?: string;
+  location?: string;
+  href?: string;
+  rates: Partial<Record<SupportedCurrency, { buy?: number; sell?: number }>>;
+};
+
+type CursMdResult = {
+  provider?: string;
+  url?: string;
+  rows?: RawCursMdRow[];
+  rates?: Record<string, number>;
+};
+
+type CursMdStatus = {
+  results?: CursMdResult[];
+};
 
 async function getBankRates(): Promise<BankRow[]> {
-  const entries = await prisma.priceEntry.findMany({
-    where: {
-      providerName: { not: null },
-      priceType: { in: supportedPriceTypes }
-    },
-    orderBy: [
-      { providerName: 'asc' },
-      { priceType: 'asc' },
-      { dateCollected: 'desc' }
-    ]
-  });
+  try {
+    const raw = await fs.readFile(STATUS_FILE, 'utf-8');
+    const status = JSON.parse(raw) as CursMdStatus;
+    const results = status.results ?? [];
 
-  const providerMap = new Map<
-    string,
-    {
-      rates: Partial<Record<SupportedCurrency, BankRate>>;
-      subtitle?: string;
-      badge: 'BNM' | 'Bancă' | 'CSV';
-    }
-  >();
+    const bankRows: BankRow[] = [];
 
-  for (const entry of entries) {
-    const provider = entry.providerName?.trim();
-    if (!provider) continue;
+    for (const result of results) {
+      if (Array.isArray(result.rows) && result.rows.length) {
+        for (const row of result.rows) {
+          const rates: Partial<Record<SupportedCurrency, BankRate>> = {};
 
-    const code = entry.priceType?.split('/')[0] as SupportedCurrency | undefined;
-    if (!code || !supportedCurrencies.includes(code)) continue;
+          for (const currency of supportedCurrencies) {
+            const pair = row.rates?.[currency];
+            if (!pair) continue;
+            const buy = formatValue(pair.buy ?? pair.sell);
+            const sell = formatValue(pair.sell ?? pair.buy);
+            if (!buy && !sell) continue;
+            rates[currency] = { buy: buy ?? sell ?? '-', sell: sell ?? buy ?? '-' };
+          }
 
-    const buyValue = formatValue(entry.priceMin ?? entry.priceAvg ?? entry.priceMax);
-    const sellValue = formatValue(entry.priceMax ?? entry.priceAvg ?? entry.priceMin);
-    if (!buyValue || !sellValue) continue;
+          if (Object.keys(rates).length === 0) continue;
 
-    const existing = providerMap.get(provider) ?? {
-      rates: {},
-      subtitle: provider === 'BNM' ? 'BNM' : undefined,
-      badge: provider === 'BNM' ? 'BNM' : 'Bancă'
-    };
+          const selectedCurrency = supportedCurrencies.find((code) => rates[code]) ?? 'EUR';
+          const selectedRate = rates[selectedCurrency];
 
-    if (!existing.rates[code]) {
-      existing.rates[code] = { buy: buyValue, sell: sellValue };
-      providerMap.set(provider, existing);
-    }
-  }
-
-  return Array.from(providerMap.entries()).map(([provider, { rates, subtitle, badge }]) => {
-    const selectedCurrency = supportedCurrencies.find((code) => rates[code]) ?? 'EUR';
-    const selectedValue = rates[selectedCurrency]?.buy ?? rates[selectedCurrency]?.sell;
-
-    return {
-      name: provider,
-      subtitle,
-      badge,
-      href: `/ro/office/${normalizeProviderSlug(provider)}`,
-      autoCurrency: selectedCurrency,
-      rates: {
-        EUR: rates.EUR,
-        USD: rates.USD,
-        GBP: rates.GBP,
-        RON: rates.RON,
-        AUTO: selectedValue ? { buy: selectedValue, sell: selectedValue } : undefined
+          bankRows.push({
+            name: row.provider,
+            subtitle: row.subtitle || (row.location ? `Locație: ${row.location}` : undefined),
+            badge: row.badge === 'BNM' ? 'BNM' : row.badge === 'CSV' ? 'CSV' : 'Bancă',
+            href: row.href || result.url || 'https://www.curs.md/ro/curs_valutar_banci',
+            autoCurrency: selectedCurrency,
+            rates: {
+              EUR: rates.EUR,
+              USD: rates.USD,
+              GBP: rates.GBP,
+              RON: rates.RON,
+              AUTO: selectedRate ? { buy: selectedRate.buy ?? '-', sell: selectedRate.sell ?? '-' } : undefined
+            }
+          });
+        }
+        continue;
       }
-    };
-  });
+
+      if (result.rates && typeof result.provider === 'string') {
+        const ratesObj = result.rates;
+        const rates: Partial<Record<SupportedCurrency, BankRate>> = {};
+
+        for (const currency of supportedCurrencies) {
+          const value = ratesObj[currency];
+          if (value == null) continue;
+          const formatted = formatValue(value) ?? '-';
+          rates[currency] = { buy: formatted, sell: formatted };
+        }
+
+        if (Object.keys(rates).length === 0) continue;
+
+        const selectedCurrency = supportedCurrencies.find((code) => rates[code]) ?? 'EUR';
+
+        bankRows.push({
+          name: result.provider,
+          subtitle: undefined,
+          badge: 'Bancă',
+          href: result.url || '#',
+          autoCurrency: selectedCurrency,
+          rates: {
+            EUR: rates.EUR,
+            USD: rates.USD,
+            GBP: rates.GBP,
+            RON: rates.RON,
+            AUTO: rates[selectedCurrency]
+          }
+        });
+      }
+    }
+
+    return bankRows;
+  } catch {
+    return [];
+  }
 }
 
 export const dynamic = 'force-dynamic';

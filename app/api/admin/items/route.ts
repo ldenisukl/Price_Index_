@@ -80,20 +80,22 @@ export async function DELETE(request: Request) {
 
     console.log('[DELETE] Item deleted successfully:', id);
     return NextResponse.json({ message: 'Item deleted successfully.' }, { status: 200 });
-  } catch (error: any) {
+  } catch (error) {
+    const err = error as Error & { code?: string; meta?: unknown; stack?: string };
+
     console.error('[DELETE] Error details:', {
-      code: error.code,
-      message: error.message,
-      meta: error.meta,
-      stack: error.stack
+      code: err.code,
+      message: err.message,
+      meta: err.meta,
+      stack: err.stack
     });
 
-    if (error.code === 'P2025') {
+    if (err.code === 'P2025') {
       return NextResponse.json({ error: 'Item not found.' }, { status: 404 });
     }
 
     return NextResponse.json(
-      { error: `Eroare internă: ${error.message}` },
+      { error: `Eroare internă: ${err.message}` },
       { status: 500 }
     );
   }

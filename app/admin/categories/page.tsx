@@ -25,9 +25,8 @@ export default function AdminCategoriesPage() {
         const response = await fetch('/api/admin/categories');
         const data = await response.json();
         setCategories(data.categories ?? []);
-      } catch (err) {
-        setError('Nu am putut încărca categoriile.');
-      } finally {
+      } catch {
+        setError('Nu s-au putut încărca categoriile.');
         setLoading(false);
       }
     };
@@ -54,8 +53,8 @@ export default function AdminCategoriesPage() {
       setCategories([result.category, ...categories]);
       setForm({ name: '', type: 'service', slug: '', description: '', icon: '' });
       setStatus('Categorie creată cu succes.');
-    } catch (err) {
-      setStatus((err as Error).message);
+    } catch (error) {
+      setStatus(error instanceof Error ? error.message : 'Eroare la creare categorie');
     }
   };
 

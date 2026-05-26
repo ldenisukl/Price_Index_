@@ -4,7 +4,11 @@ export type PriceItem = {
   title: string;
   subtitle: string;
   provider?: string;
+  providerType?: string;
+  location?: string;
   price: string;
+  buyPrice?: string;
+  sellPrice?: string;
   trend: number;
   trendPercent: string;
   status: 'Live' | 'Rising' | 'Stable' | 'Old';

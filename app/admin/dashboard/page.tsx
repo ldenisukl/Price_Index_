@@ -40,7 +40,7 @@ export default function AdminDashboardPage() {
           prices: pricesData.entries.length,
           submissions: submissionsData.submissions.length
         });
-      } catch (err) {
+      } catch {
         setError('Nu s-au putut încărca datele de administrare.');
       } finally {
         setLoading(false);

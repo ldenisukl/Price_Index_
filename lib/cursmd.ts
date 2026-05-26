@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { load } from 'cheerio';
+import { load, type Element } from 'cheerio';
 
 export type BankRate = {
   buy: string;
@@ -8,10 +8,14 @@ export type BankRate = {
 
 export type SupportedCurrency = 'EUR' | 'USD' | 'GBP' | 'RON';
 
+export type ProviderType = 'BNM' | 'Bancă' | 'CSV' | 'Casă schimb' | 'Other';
+
 export type BankRow = {
   name: string;
   subtitle?: string;
   badge: 'BNM' | 'Bancă' | 'CSV';
+  providerType?: ProviderType;
+  location?: string;
   href: string;
   autoCurrency: SupportedCurrency;
   rates: {
@@ -58,7 +62,26 @@ const buildRates = (values: Array<string | undefined>): Partial<Record<Supported
 };
 
 const isHeaderRow = (text: string) => {
-  return /EUR|USD|GBP|RON/i.test(text) && /banca|casă|banci|curs/i.test(text);
+  return /\x08EUR\x08|\x08USD\x08|\x08GBP\x08|\x08RON\x08/i.test(text) && /banca|casă|banci|curs/i.test(text);
+};
+
+const detectProviderType = (badge: string) => {
+  const raw = (badge || '').toLowerCase();
+  if (/\bbnm\b/.test(raw)) return 'BNM' as const;
+  if (/\bcasa|change|chimb|câș|casa de schimb|cash/.test(raw)) return 'Casă schimb' as const;
+  if (/\bcsv\b/.test(raw)) return 'CSV' as const;
+  if (/\bbanc|bank|banca\b/.test(raw)) return 'Bancă' as const;
+  return 'Other' as const;
+};
+
+const extractLocation = (text: string) => {
+  const normalized = text.replace(/\u00A0/g, ' ').replace(/\s+/g, ' ').trim();
+  const match = normalized.match(/\b(Chi[sș]inau|Chisinau|Bălți|Balti|Cahul|Orhei|Ungheni|Soroca|Tiraspol|Comrat|Dubasari|Rezina|Chișinău)\b/i);
+  if (match) return match[0];
+  const afterDash = normalized.split(/[-–—]/)[1]?.trim();
+  if (afterDash && afterDash.length < 40) return afterDash;
+  const afterComma = normalized.split(',').slice(1).join(',').trim();
+  return afterComma || undefined;
 };
 
 export async function getCursMdBankRates(): Promise<BankRow[]> {
@@ -66,7 +89,7 @@ export async function getCursMdBankRates(): Promise<BankRow[]> {
   const $ = load(response.data);
 
   let table = $('table')
-    .filter((_, element) => {
+    .filter((_: number, element: Element) => {
       const text = $(element).text();
       return SUPPORTED_CURRENCIES.every((code) => text.includes(code));
     })
@@ -81,11 +104,11 @@ export async function getCursMdBankRates(): Promise<BankRow[]> {
   }
 
   const bankRows: BankRow[] = [];
-  table.find('tbody tr').each((_, row) => {
+  table.find('tbody tr').each((_: number, row: Element) => {
     const cells = $(row)
       .find('td, th')
       .toArray()
-      .map((cell) => $(cell).text().replace(/\s+/g, ' ').trim());
+      .map((cell: Element) => $(cell).text().replace(/\s+/g, ' ').trim());
 
     if (cells.length < 2) return;
 
@@ -98,11 +121,15 @@ export async function getCursMdBankRates(): Promise<BankRow[]> {
 
     const selectedCurrency = (SUPPORTED_CURRENCIES.find((code) => rates[code]) ?? 'EUR') as SupportedCurrency;
     const selectedRate = rates[selectedCurrency];
+    const providerType = detectProviderType('');
+    const location = extractLocation(bankName);
 
     bankRows.push({
       name: bankName,
-      subtitle: undefined,
-      badge: 'Bancă',
+      subtitle: location ? `Locație: ${location}` : undefined,
+      badge: providerType === 'BNM' ? 'BNM' : 'Bancă',
+      providerType,
+      location,
       href: SOURCE_URL,
       autoCurrency: selectedCurrency,
       rates: {

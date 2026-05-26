@@ -9,6 +9,26 @@ export async function GET(request: Request) {
     return NextResponse.json({ suggestions: [] });
   }
 
+  type SuggestionItem = {
+    id: string;
+    name: string;
+    categoryId: string;
+    category?: { type?: string | null } | null;
+  };
+
+  type SuggestionRegion = {
+    id: string;
+    name: string;
+  };
+
+  type SuggestionPriceType = {
+    priceType: string | null;
+  };
+
+  type SuggestionSource = {
+    sourceType: string | null;
+  };
+
   const [items, regions, types, sources] = await Promise.all([
     prisma.priceItem.findMany({
       where: {
@@ -22,7 +42,7 @@ export async function GET(request: Request) {
     }).then(async (items) => {
       const itemsWithCategory = await Promise.all(items.map(async (item) => {
         const category = await prisma.category.findUnique({ where: { id: item.categoryId } });
-        return { ...item, category };
+        return { ...item, category } as SuggestionItem;
       }));
       return itemsWithCategory;
     }),
@@ -35,7 +55,7 @@ export async function GET(request: Request) {
       },
       select: { id: true, name: true },
       take: 5
-    }),
+    }) as Promise<SuggestionRegion[]>,
     prisma.priceEntry.findMany({
       where: {
         priceType: {
@@ -46,7 +66,7 @@ export async function GET(request: Request) {
       distinct: ['priceType'],
       select: { priceType: true },
       take: 3
-    }),
+    }) as Promise<SuggestionPriceType[]>,
     prisma.priceEntry.findMany({
       where: {
         sourceType: {
@@ -57,29 +77,29 @@ export async function GET(request: Request) {
       distinct: ['sourceType'],
       select: { sourceType: true },
       take: 3
-    })
-  ]).catch(() => [[], [], [], []]);
+    }) as Promise<SuggestionSource[]>
+  ]).catch(() => [[], [], [], []] as [SuggestionItem[], SuggestionRegion[], SuggestionPriceType[], SuggestionSource[]]);
 
   const suggestions = [
-    ...items.map((item: any) => ({
+    ...items.map((item) => ({
       type: 'item',
       label: item.name,
       category: item.category?.type || 'Unknown',
       value: item.name
     })),
-    ...regions.map((region: any) => ({
+    ...regions.map((region) => ({
       type: 'region',
       label: region.name,
       value: region.name
     })),
-    ...types.map((t: any) => ({
+    ...types.map((t) => ({
       type: 'priceType',
       label: t.priceType || 'Unknown price type',
       value: t.priceType
     })),
     ...sources
-      .filter((s: any) => s.sourceType)
-      .map((s: any) => ({
+      .filter((s) => s.sourceType)
+      .map((s) => ({
         type: 'source',
         label: s.sourceType,
         value: s.sourceType

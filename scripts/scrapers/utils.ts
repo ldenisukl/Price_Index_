@@ -5,11 +5,15 @@ export type RateMap = Record<string, number>;
 
 export type BankRateMap = Record<string, { buy?: number; sell?: number }>;
 
+export type ProviderType = 'bank' | 'exchange' | 'bnm' | 'csv' | 'other';
+
 export interface ScrapeRow {
   provider: string;
   rates: BankRateMap;
   subtitle?: string;
   badge?: string;
+  providerType?: ProviderType;
+  location?: string;
   href?: string;
   note?: string;
 }

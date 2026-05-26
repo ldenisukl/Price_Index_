@@ -27,9 +27,8 @@ export default function AdminSubmissionsPage() {
         const response = await fetch('/api/admin/submissions');
         const data = await response.json();
         setSubmissions(data.submissions ?? []);
-      } catch (err) {
-        setError('Nu am putut încărca contribuțiile.');
-      } finally {
+      } catch {
+        setError('Nu s-au putut încărca contribuțiile.');
         setLoading(false);
       }
     };
@@ -54,8 +53,8 @@ export default function AdminSubmissionsPage() {
 
       setSubmissions(submissions.map((submission) => (submission.id === id ? result.submission : submission)));
       setStatus(`Contribuția a fost marcată ca ${newStatus}.`);
-    } catch (err) {
-      setStatus((err as Error).message);
+    } catch (error) {
+      setStatus(error instanceof Error ? error.message : 'Eroare la actualizarea contribuției.');
     }
   };
 

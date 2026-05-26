@@ -79,7 +79,7 @@ export default function AdminPricesPage() {
           priceItemId: data.items?.[0]?.id ?? '',
           regionId: data.regions?.[0]?.id ?? ''
         }));
-      } catch (err) {
+      } catch {
         setError('Nu am putut încărca datele de prețuri.');
       } finally {
         setLoading(false);
@@ -130,8 +130,8 @@ export default function AdminPricesPage() {
         sourceConfidence: '75',
         providerName: ''
       }));
-    } catch (err) {
-      setStatus((err as Error).message);
+    } catch (error) {
+      setStatus(error instanceof Error ? error.message : 'Eroare la creare preț.');
     }
   };
 
@@ -167,8 +167,8 @@ export default function AdminPricesPage() {
       setEntries(entries.map((entry) => (entry.id === selectedEntry.id ? result.entry : entry)));
       setSelectedEntry(result.entry);
       setStatus('Preț actualizat cu succes.');
-    } catch (err) {
-      setStatus((err as Error).message);
+    } catch (error) {
+      setStatus(error instanceof Error ? error.message : 'Eroare la actualizare preț.');
     }
   };
 

@@ -14,7 +14,7 @@ export async function scrapeMICB(): Promise<ScrapeResult> {
     await new Promise((resolve) => setTimeout(resolve, 2500));
 
     const rates = await page.evaluate(() => {
-      const result: Record<string, number> = {};
+      const result: Record<string, { buy?: number; sell?: number }> = {};
 
       const parseValue = (raw: string | null | undefined): number | undefined => {
         if (!raw) return undefined;
@@ -27,25 +27,37 @@ export async function scrapeMICB(): Promise<ScrapeResult> {
         return Number.isFinite(value) ? value : undefined;
       };
 
-      const cashTable = document.querySelector(".exchange-table.exchange_numerar");
-      if (!cashTable) return result;
+      const buyCells = document.querySelectorAll<HTMLElement>(".col[class*='buy_']");
+      buyCells.forEach((cell) => {
+        const className = Array.from(cell.classList).find((cls) => cls.startsWith("buy_"));
+        const code = className?.replace("buy_", "").toUpperCase();
 
-      for (const code of ["EUR", "USD"]) {
-        const buyCell = cashTable.querySelector(`.buy_${code}`) as HTMLElement | null;
-        const sellCell = cashTable.querySelector(`.sell_${code}`) as HTMLElement | null;
-
-        const buyValue = parseValue(buyCell?.innerText);
-        const sellValue = parseValue(sellCell?.innerText);
-        const value = buyValue ?? sellValue;
-
-        if (value && value > 5 && value < 50) {
-          result[code] = value;
+        if (!code || !["EUR", "USD", "GBP", "RON"].includes(code)) {
+          return;
         }
-      }
+
+        const buy = parseValue(cell.dataset.sell || cell.innerText);
+        const sellCell = document.querySelector<HTMLElement>(`.sell_${code}`);
+        const sell = parseValue(sellCell?.dataset.sell || sellCell?.innerText);
+
+        if ((buy && buy > 0) || (sell && sell > 0)) {
+          result[code] = { buy, sell };
+        }
+      });
 
       return result;
     });
-    return { provider, url, rates };
+
+    return {
+      provider,
+      url,
+      rows: [{
+        provider,
+        rates,
+        providerType: "bank",
+        location: "Moldova"
+      }]
+    };
   } finally {
     await browser.close();
   }

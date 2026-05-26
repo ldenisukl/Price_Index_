@@ -1,9 +1,9 @@
 import cron from 'node-cron';
 import { runAll } from './scraper-runner';
 
-// Every hour at minute 0
-cron.schedule('0 * * * *', async () => {
-  console.log('Running hourly scraper:', new Date().toISOString());
+// Every 12 hours at minute 0 (midnight and noon)
+cron.schedule('0 */12 * * *', async () => {
+  console.log('Running scheduled scraper (every 12h):', new Date().toISOString());
   try {
     await runAll();
   } catch (err) {
@@ -11,4 +11,4 @@ cron.schedule('0 * * * *', async () => {
   }
 });
 
-console.log('Scrape cron started. Runs hourly at minute 0.');
+console.log('Scrape cron started. Runs every 12 hours at minute 0.');

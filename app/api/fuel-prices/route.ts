@@ -24,7 +24,9 @@ function matchesNetwork(stationName: string | null | undefined, network: string)
 }
 
 export async function GET() {
-  const response = await fetch('https://api.ecarburanti.anre.md/public/');
+  const response = await fetch('https://api.ecarburanti.anre.md/public/', {
+    cache: 'no-store'
+  });
 
   if (!response.ok) {
     return NextResponse.json({ error: 'Unable to fetch fuel data from ANRE.' }, { status: 502 });
