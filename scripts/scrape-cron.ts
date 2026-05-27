@@ -1,5 +1,5 @@
 import cron from 'node-cron';
-import { runAll } from './scraper-runner';
+import { runAll } from './scraper-runner.ts';
 
 // Every 12 hours at minute 0 (midnight and noon)
 cron.schedule('0 */12 * * *', async () => {

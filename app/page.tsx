@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import AiChat from '@/components/AiChat';
 import ElectroPriceSection from '@/components/ElectroPriceSection';
 import FuelPricesSection from '@/components/FuelPricesSection';
@@ -13,6 +13,7 @@ import type { PriceItem } from '@/lib/data';
 export type TabKey = 'all' | 'product' | 'service' | 'currency' | 'fuel';
 
 const dashboardProviderWhitelist = new Set(['MAIB', 'MICB']);
+const savedItemsStorageKey = 'price-index-saved-items';
 
 export default function HomePage() {
   const [activeTab, setActiveTab] = useState<TabKey>('all');
@@ -23,6 +24,29 @@ export default function HomePage() {
   const [cards, setCards] = useState<PriceItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [savedIds, setSavedIds] = useState<string[]>([]);
+
+  useEffect(() => {
+    try {
+      const stored = window.localStorage.getItem(savedItemsStorageKey);
+      if (stored) {
+        const parsed = JSON.parse(stored) as string[];
+        if (Array.isArray(parsed)) {
+          setSavedIds(parsed);
+        }
+      }
+    } catch {
+      // localStorage unavailable
+    }
+  }, []);
+
+  useEffect(() => {
+    try {
+      window.localStorage.setItem(savedItemsStorageKey, JSON.stringify(savedIds));
+    } catch {
+      // localStorage unavailable
+    }
+  }, [savedIds]);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -34,7 +58,7 @@ export default function HomePage() {
       try {
         let url = `/api/prices`;
         const params = new URLSearchParams();
-        
+
         if (activeTab !== 'all') {
           params.append('category', activeTab);
         }
@@ -50,7 +74,7 @@ export default function HomePage() {
         if (locationFilter) {
           params.append('location', locationFilter);
         }
-        
+
         if (params.size > 0) {
           url += `?${params.toString()}`;
         }
@@ -80,10 +104,30 @@ export default function HomePage() {
     return () => controller.abort();
   }, [activeTab, searchQuery, currencyFilter, providerTypeFilter, locationFilter]);
 
+  const toggleSaved = (id: string) => {
+    setSavedIds((current) =>
+      current.includes(id) ? current.filter((itemId) => itemId !== id) : [...current, id]
+    );
+  };
+
+  const removeSaved = (id: string) => {
+    setSavedIds((current) => current.filter((itemId) => itemId !== id));
+  };
+
   const dashboardCards = cards.filter((item) => {
     const provider = item.provider?.toUpperCase();
     return provider ? dashboardProviderWhitelist.has(provider) : false;
   });
+
+  const savedCards = useMemo(
+    () => dashboardCards.filter((item) => savedIds.includes(item.id)),
+    [dashboardCards, savedIds]
+  );
+
+  const orderedDashboardCards = useMemo(() => {
+    const savedSet = new Set(savedIds);
+    return [...dashboardCards].sort((a, b) => Number(savedSet.has(b.id)) - Number(savedSet.has(a.id)));
+  }, [dashboardCards, savedIds]);
 
   return (
     <div className="flex min-h-screen flex-col bg-[linear-gradient(180deg,#05070f_0%,#090b12_60%,#111827_100%)]">
@@ -92,7 +136,11 @@ export default function HomePage() {
         <div className="w-full px-4 py-8 sm:px-6 xl:px-0">
           <div className="grid gap-6 xl:grid-cols-[320px_420px_1fr]">
             <div className="space-y-6">
-              <Sidebar />
+              <Sidebar
+                savedCards={savedCards}
+                onClearSaved={() => setSavedIds([])}
+                onRemoveSaved={removeSaved}
+              />
             </div>
             <div className="space-y-6">
               <AiChat />
@@ -146,12 +194,19 @@ export default function HomePage() {
                   <div className="col-span-full rounded-2xl border border-red-500/20 bg-slate-950/80 p-10 text-center text-red-300">
                     {error}
                   </div>
-                ) : dashboardCards.length === 0 ? (
+                ) : orderedDashboardCards.length === 0 ? (
                   <div className="col-span-full rounded-2xl border border-white/10 bg-slate-950/80 p-10 text-center text-slate-400">
                     No prices available for this category.
                   </div>
                 ) : (
-                  dashboardCards.map((item) => <PriceCard key={item.id} item={item} />)
+                  orderedDashboardCards.map((item) => (
+                    <PriceCard
+                      key={item.id}
+                      item={item}
+                      isSaved={savedIds.includes(item.id)}
+                      onToggleSave={toggleSaved}
+                    />
+                  ))
                 )}
               </div>
               <div className="rounded-2xl border border-white/10 bg-slate-950/80 p-5">

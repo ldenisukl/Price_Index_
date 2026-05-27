@@ -54,12 +54,18 @@ function MiniChart({ data }: { data?: number[] }) {
   );
 }
 
-export default function PriceCard({ item }: { item: PriceItem }) {
+type PriceCardProps = {
+  item: PriceItem;
+  isSaved?: boolean;
+  onToggleSave?: (id: string) => void;
+};
+
+export default function PriceCard({ item, isSaved = false, onToggleSave }: PriceCardProps) {
   const colors = statusColor[item.status];
 
   return (
     <div className={`overflow-hidden rounded-2xl border border-white/10 bg-slate-950/80 p-6 shadow-glow transition hover:border-blue-500/30 hover:shadow-[0_20px_60px_rgba(59,130,246,0.1)] ${colors.bg}`}>
-      <div className="mb-6 flex items-start justify-between">
+      <div className="mb-6 flex items-start justify-between gap-3">
         <div className="space-y-1">
           <div className="flex items-center gap-2">
             <span className={`flex h-6 w-6 items-center justify-center rounded bg-gradient-to-r ${categoryColor[item.category]} text-xs font-bold text-white`}>
@@ -74,10 +80,16 @@ export default function PriceCard({ item }: { item: PriceItem }) {
           ) : null}
           <h3 className="text-xl font-semibold text-white">{item.title}</h3>
         </div>
-        <button className="text-slate-400 transition hover:text-slate-200">
-          <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-          </svg>
+        <button
+          type="button"
+          onClick={() => onToggleSave?.(item.id)}
+          className={`rounded-full px-3 py-1.5 text-xs font-semibold transition ${
+            isSaved
+              ? 'bg-amber-500/20 text-amber-200'
+              : 'bg-white/5 text-slate-200 hover:bg-white/10'
+          }`}
+        >
+          {isSaved ? '★ Saved' : '☆ Save'}
         </button>
       </div>
 
