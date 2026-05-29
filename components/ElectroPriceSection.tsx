@@ -1,11 +1,12 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 
 type AvailabilityStatus = 'in-stock' | 'out-of-stock' | 'unknown';
 
 type ElectroOffer = {
-  store: 'enter' | 'gorilla';
+  product: string;
+  store: 'enter' | 'gorilla' | 'darwin' | 'smart';
   label: string;
   price: string;
   link: string;
@@ -39,7 +40,7 @@ export default function ElectroPriceSection() {
         });
 
         if (!response.ok) {
-          throw new Error('Unable to fetch phone prices');
+          throw new Error('Unable to fetch product prices');
         }
 
         const json = await response.json();
@@ -50,7 +51,7 @@ export default function ElectroPriceSection() {
         }
       } catch (err) {
         if ((err as Error).name !== 'AbortError') {
-          setError('Nu s-au putut încărca prețurile pentru iPhone 17 Pro.');
+          setError('Nu s-au putut încărca prețurile pentru produsele comparate.');
         }
       } finally {
         setLoading(false);
@@ -66,23 +67,33 @@ export default function ElectroPriceSection() {
     };
   }, []);
 
-  const lastUpdated = offers[0]?.updatedAt ?? null;
+  const groupedOffers = useMemo(() => {
+    return offers.reduce<Record<string, ElectroOffer[]>>((acc, offer) => {
+      acc[offer.product] = acc[offer.product] ?? [];
+      acc[offer.product].push(offer);
+      return acc;
+    }, {});
+  }, [offers]);
+
+  const lastUpdated = offers.reduce((latest, offer) => {
+    return offer.updatedAt > latest ? offer.updatedAt : latest;
+  }, '');
 
   return (
     <section className="rounded-[2rem] border border-white/10 bg-slate-900/80 p-6 shadow-glow">
       <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <p className="text-sm uppercase tracking-[0.22em] text-slate-500">Comparare rapidă</p>
-          <h2 className="mt-2 text-2xl font-semibold text-white">iPhone 17 Pro</h2>
+          <h2 className="mt-2 text-2xl font-semibold text-white">Prețuri tablete și laptopuri</h2>
         </div>
         <p className="text-sm text-slate-500">
           {loading
             ? 'Se încarcă...'
             : error
-              ? 'Actualizare parțială'
-              : lastUpdated
-                ? `Actualizat la ${lastUpdated}`
-                : 'Actualizat automat'}
+            ? 'Actualizare parțială'
+            : lastUpdated
+            ? `Actualizat la ${lastUpdated}`
+            : 'Actualizat automat'}
         </p>
       </div>
 
@@ -92,45 +103,65 @@ export default function ElectroPriceSection() {
         </div>
       ) : null}
 
-      <div className="grid gap-4 md:grid-cols-2">
-        {loading
-          ? Array.from({ length: 2 }).map((_, index) => (
-              <div key={index} className="animate-pulse rounded-3xl border border-white/10 bg-slate-950/70 p-6">
-                <div className="h-4 w-24 rounded-full bg-white/10" />
-                <div className="mt-5 h-8 w-32 rounded bg-white/10" />
-                <div className="mt-6 h-10 w-full rounded-full bg-white/10" />
+      {loading ? (
+        <div className="grid gap-4 md:grid-cols-2">
+          {Array.from({ length: 2 }).map((_, index) => (
+            <div key={index} className="animate-pulse rounded-3xl border border-white/10 bg-slate-950/70 p-6">
+              <div className="h-4 w-24 rounded-full bg-white/10" />
+              <div className="mt-5 h-8 w-32 rounded bg-white/10" />
+              <div className="mt-6 h-10 w-full rounded-full bg-white/10" />
+            </div>
+          ))}
+        </div>
+      ) : (
+        Object.entries(groupedOffers).map(([product, productOffers]) => (
+          <div key={product} className="space-y-4 pb-6 pt-4">
+            <div className="rounded-3xl border border-white/10 bg-slate-950/80 p-5">
+              <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                  <p className="text-sm uppercase tracking-[0.22em] text-slate-500">{product}</p>
+                  <p className="mt-1 text-lg font-semibold text-white">Comparare preț între magazine</p>
+                </div>
+                <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs uppercase tracking-[0.2em] text-slate-300">
+                  {productOffers.length} ofertă{productOffers.length === 1 ? '' : 'e'}
+                </span>
               </div>
-            ))
-          : offers.map((offer) => (
-              <div
-                key={offer.store}
-                className="rounded-3xl border border-white/10 bg-slate-950/80 p-6 shadow-glow transition hover:border-cyan-400/30"
-              >
-                <div className="flex items-center justify-between gap-3">
-                  <div>
-                    <p className="text-sm uppercase tracking-[0.22em] text-slate-500">{offer.label}</p>
-                    <p className="mt-3 text-3xl font-semibold text-white">{offer.price}</p>
-                  </div>
-                  <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs uppercase tracking-[0.2em] text-slate-300">
-                    {offer.store}
-                  </span>
-                </div>
-                <div className="mt-4">
-                  <span className={`inline-flex rounded-full border px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] ${statusStyles[offer.stock]}`}>
-                    {offer.stockLabel}
-                  </span>
-                </div>
-                <a
-                  href={offer.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-blue-600 px-4 py-3 text-sm font-semibold text-white transition hover:bg-blue-500"
+            </div>
+
+            <div className="grid gap-4 md:grid-cols-2">
+              {productOffers.map((offer) => (
+                <div
+                  key={`${product}-${offer.store}`}
+                  className="rounded-3xl border border-white/10 bg-slate-950/80 p-6 shadow-glow transition hover:border-cyan-400/30"
                 >
-                  Vizitează magazinul
-                </a>
-              </div>
-            ))}
-      </div>
+                  <div className="flex items-center justify-between gap-3">
+                    <div>
+                      <p className="text-sm uppercase tracking-[0.22em] text-slate-500">{offer.label}</p>
+                      <p className="mt-3 text-3xl font-semibold text-white">{offer.price}</p>
+                    </div>
+                    <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs uppercase tracking-[0.2em] text-slate-300">
+                      {offer.store}
+                    </span>
+                  </div>
+                  <div className="mt-4">
+                    <span className={`inline-flex rounded-full border px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] ${statusStyles[offer.stock]}`}>
+                      {offer.stockLabel}
+                    </span>
+                  </div>
+                  <a
+                    href={offer.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-blue-600 px-4 py-3 text-sm font-semibold text-white transition hover:bg-blue-500"
+                  >
+                    Vizitează magazinul
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))
+      )}
     </section>
   );
 }

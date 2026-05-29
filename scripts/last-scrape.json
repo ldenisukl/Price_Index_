@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-05-27T08:06:02.025Z",
+  "lastRun": "2026-05-28T08:02:18.181Z",
   "success": false,
   "results": [
     {
@@ -14,8 +14,8 @@
               "sell": 20.28
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.45
+              "buy": 17.2,
+              "sell": 17.52
             },
             "GBP": {
               "buy": 23.05,
@@ -43,8 +43,8 @@
               "sell": 20.26
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.42
+              "buy": 17.1,
+              "sell": 17.5
             },
             "GBP": {
               "buy": 22.9,
@@ -52,7 +52,7 @@
             },
             "RON": {
               "buy": 3.76,
-              "sell": 3.91
+              "sell": 3.92
             }
           },
           "providerType": "bank",
@@ -68,20 +68,20 @@
           "provider": "Banca Nationala",
           "rates": {
             "EUR": {
-              "buy": 20.1688,
-              "sell": 20.1688
+              "buy": 20.1434,
+              "sell": 20.1434
             },
             "USD": {
-              "buy": 17.3234,
-              "sell": 17.3234
+              "buy": 17.3083,
+              "sell": 17.3083
             },
             "GBP": {
-              "buy": 23.3641,
-              "sell": 23.3641
+              "buy": 23.2624,
+              "sell": 23.2624
             },
             "RON": {
-              "buy": 3.8513,
-              "sell": 3.8513
+              "buy": 3.8451,
+              "sell": 3.8451
             }
           },
           "badge": "BNM",
@@ -99,16 +99,16 @@
               "sell": 20.24
             },
             "USD": {
-              "buy": 17.18,
-              "sell": 17.4
+              "buy": 17.24,
+              "sell": 17.47
             },
             "GBP": {
               "buy": 22.5,
               "sell": 23.5
             },
             "RON": {
-              "buy": 3.8,
-              "sell": 3.88
+              "buy": 3.79,
+              "sell": 3.86
             }
           },
           "badge": "Bancă",
@@ -126,8 +126,8 @@
               "sell": 20.19
             },
             "USD": {
-              "buy": 17.17,
-              "sell": 17.37
+              "buy": 17.23,
+              "sell": 17.45
             },
             "GBP": {
               "buy": 23,
@@ -149,12 +149,12 @@
           "provider": "Eximbank",
           "rates": {
             "EUR": {
-              "buy": 20.05,
+              "buy": 20.03,
               "sell": 20.23
             },
             "USD": {
-              "buy": 17.18,
-              "sell": 17.4
+              "buy": 17.23,
+              "sell": 17.46
             },
             "GBP": {
               "buy": 23,
@@ -180,8 +180,8 @@
               "sell": 20.24
             },
             "USD": {
-              "buy": 17.18,
-              "sell": 17.4
+              "buy": 17.22,
+              "sell": 17.46
             },
             "GBP": {
               "buy": 23.05,
@@ -200,33 +200,6 @@
           "note": "4"
         },
         {
-          "provider": "maib",
-          "rates": {
-            "EUR": {
-              "buy": 20,
-              "sell": 20.28
-            },
-            "USD": {
-              "buy": 17.15,
-              "sell": 17.45
-            },
-            "GBP": {
-              "buy": 23.05,
-              "sell": 23.45
-            },
-            "RON": {
-              "buy": 3.78,
-              "sell": 3.92
-            }
-          },
-          "badge": "Bancă",
-          "providerType": "bank",
-          "location": "Chișinău",
-          "href": "https://www.curs.md/ro/curs_valutar_banci",
-          "subtitle": "2",
-          "note": "2"
-        },
-        {
           "provider": "Moldindconbank",
           "rates": {
             "EUR": {
@@ -234,8 +207,8 @@
               "sell": 20.26
             },
             "USD": {
-              "buy": 17.17,
-              "sell": 17.42
+              "buy": 17.22,
+              "sell": 17.5
             },
             "GBP": {
               "buy": 22.9,
@@ -243,7 +216,7 @@
             },
             "RON": {
               "buy": 3.76,
-              "sell": 3.91
+              "sell": 3.92
             }
           },
           "badge": "Bancă",
@@ -254,38 +227,23 @@
           "note": ""
         },
         {
-          "provider": "OTP Bank",
-          "rates": {
-            "USD": {
-              "buy": 17.19,
-              "sell": 17.45
-            }
-          },
-          "badge": "Bancă",
-          "providerType": "bank",
-          "location": "Chișinău",
-          "href": "https://www.curs.md/ro/curs_valutar_banci",
-          "subtitle": "bd. Ștefan cel Mare și Sfânt 81A, mun. Chișinău",
-          "note": ""
-        },
-        {
           "provider": "Victoriabank",
           "rates": {
             "EUR": {
-              "buy": 20,
-              "sell": 20.29
+              "buy": 19.95,
+              "sell": 20.26
             },
             "USD": {
               "buy": 17.15,
-              "sell": 17.45
+              "sell": 17.5
             },
             "GBP": {
-              "buy": 23.05,
-              "sell": 23.55
+              "buy": 23,
+              "sell": 23.5
             },
             "RON": {
-              "buy": 3.78,
-              "sell": 3.92
+              "buy": 3.76,
+              "sell": 3.91
             }
           },
           "badge": "Bancă",
@@ -299,16 +257,16 @@
           "provider": "aBANKnotes 1 (Everest)",
           "rates": {
             "EUR": {
-              "buy": 20.02,
+              "buy": 20.03,
               "sell": 20.1
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.25
+              "buy": 17.2,
+              "sell": 17.28
             },
             "GBP": {
-              "buy": 23,
-              "sell": 23.2
+              "buy": 23.05,
+              "sell": 23.17
             },
             "RON": {
               "buy": 3.8,
@@ -330,15 +288,15 @@
               "sell": 20.1
             },
             "USD": {
-              "buy": 17.18,
-              "sell": 17.28
+              "buy": 17.22,
+              "sell": 17.3
             },
             "GBP": {
               "buy": 23.05,
-              "sell": 23.2
+              "sell": 23.17
             },
             "RON": {
-              "buy": 3.81,
+              "buy": 3.82,
               "sell": 3.86
             }
           },
@@ -357,15 +315,15 @@
               "sell": 20.1
             },
             "USD": {
-              "buy": 17.18,
-              "sell": 17.28
+              "buy": 17.22,
+              "sell": 17.3
             },
             "GBP": {
               "buy": 23.05,
-              "sell": 23.2
+              "sell": 23.17
             },
             "RON": {
-              "buy": 3.81,
+              "buy": 3.82,
               "sell": 3.86
             }
           },
@@ -380,16 +338,16 @@
           "provider": "AClio",
           "rates": {
             "EUR": {
-              "buy": 20.03,
-              "sell": 20.08
+              "buy": 20.06,
+              "sell": 20.12
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.2
+              "buy": 17.2,
+              "sell": 17.26
             },
             "GBP": {
-              "buy": 23.05,
-              "sell": 23.15
+              "buy": 23.06,
+              "sell": 23.12
             },
             "RON": {
               "buy": 3.83,
@@ -411,15 +369,15 @@
               "sell": 20.13
             },
             "USD": {
-              "buy": 17.18,
-              "sell": 17.28
+              "buy": 17.22,
+              "sell": 17.3
             },
             "GBP": {
               "buy": 23.05,
-              "sell": 23.23
+              "sell": 23.15
             },
             "RON": {
-              "buy": 3.81,
+              "buy": 3.82,
               "sell": 3.86
             }
           },
@@ -438,16 +396,16 @@
               "sell": 20.1
             },
             "USD": {
-              "buy": 17.19,
-              "sell": 17.25
+              "buy": 17.23,
+              "sell": 17.29
             },
             "GBP": {
-              "buy": 23.07,
+              "buy": 23.05,
               "sell": 23.15
             },
             "RON": {
               "buy": 3.83,
-              "sell": 3.87
+              "sell": 3.86
             }
           },
           "badge": "CSV",
@@ -458,23 +416,50 @@
           "note": ""
         },
         {
-          "provider": "Armetis-Grup",
+          "provider": "Angelex Exchange",
           "rates": {
             "EUR": {
               "buy": 20.03,
               "sell": 20.12
             },
             "USD": {
-              "buy": 17.16,
-              "sell": 17.23
+              "buy": 17.2,
+              "sell": 17.29
             },
             "GBP": {
-              "buy": 23.05,
-              "sell": 23.18
+              "buy": 23,
+              "sell": 23.12
             },
             "RON": {
               "buy": 3.8,
               "sell": 3.85
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "24/7",
+          "note": "24/7"
+        },
+        {
+          "provider": "Armetis-Grup",
+          "rates": {
+            "EUR": {
+              "buy": 20.06,
+              "sell": 20.12
+            },
+            "USD": {
+              "buy": 17.23,
+              "sell": 17.32
+            },
+            "GBP": {
+              "buy": 23.06,
+              "sell": 23.12
+            },
+            "RON": {
+              "buy": 3.81,
+              "sell": 3.86
             }
           },
           "badge": "CSV",
@@ -488,19 +473,19 @@
           "provider": "Armetis-Grup Sucursala 1",
           "rates": {
             "EUR": {
-              "buy": 20.03,
+              "buy": 20.05,
               "sell": 20.1
             },
             "USD": {
-              "buy": 17.18,
-              "sell": 17.25
+              "buy": 17.23,
+              "sell": 17.28
             },
             "GBP": {
-              "buy": 23.08,
-              "sell": 23.23
+              "buy": 23.06,
+              "sell": 23.1
             },
             "RON": {
-              "buy": 3.81,
+              "buy": 3.82,
               "sell": 3.85
             }
           },
@@ -515,19 +500,19 @@
           "provider": "Armetis-Grup Sucursala 2",
           "rates": {
             "EUR": {
-              "buy": 20.04,
+              "buy": 20.06,
               "sell": 20.1
             },
             "USD": {
-              "buy": 17.18,
-              "sell": 17.24
+              "buy": 17.23,
+              "sell": 17.32
             },
             "GBP": {
-              "buy": 23.08,
-              "sell": 23.14
+              "buy": 23.06,
+              "sell": 23.1
             },
             "RON": {
-              "buy": 3.8,
+              "buy": 3.82,
               "sell": 3.85
             }
           },
@@ -542,20 +527,20 @@
           "provider": "Armetis-Grup Sucursala 3",
           "rates": {
             "EUR": {
-              "buy": 20.03,
+              "buy": 20.06,
               "sell": 20.12
             },
             "USD": {
-              "buy": 17.16,
-              "sell": 17.23
+              "buy": 17.23,
+              "sell": 17.32
             },
             "GBP": {
-              "buy": 23.05,
-              "sell": 23.18
+              "buy": 23.06,
+              "sell": 23.12
             },
             "RON": {
-              "buy": 3.8,
-              "sell": 3.85
+              "buy": 3.81,
+              "sell": 3.86
             }
           },
           "badge": "CSV",
@@ -569,20 +554,20 @@
           "provider": "Armetis-Grup Sucursala 4",
           "rates": {
             "EUR": {
-              "buy": 20.03,
+              "buy": 20.06,
               "sell": 20.12
             },
             "USD": {
-              "buy": 17.16,
-              "sell": 17.23
+              "buy": 17.23,
+              "sell": 17.32
             },
             "GBP": {
-              "buy": 23.05,
-              "sell": 23.18
+              "buy": 23.06,
+              "sell": 23.12
             },
             "RON": {
-              "buy": 3.8,
-              "sell": 3.85
+              "buy": 3.81,
+              "sell": 3.86
             }
           },
           "badge": "CSV",
@@ -596,20 +581,20 @@
           "provider": "Armetis-Grup Sucursala 5",
           "rates": {
             "EUR": {
-              "buy": 20.03,
+              "buy": 20.06,
               "sell": 20.12
             },
             "USD": {
-              "buy": 17.16,
-              "sell": 17.23
+              "buy": 17.23,
+              "sell": 17.32
             },
             "GBP": {
-              "buy": 23.05,
-              "sell": 23.18
+              "buy": 23.06,
+              "sell": 23.12
             },
             "RON": {
-              "buy": 3.8,
-              "sell": 3.85
+              "buy": 3.81,
+              "sell": 3.86
             }
           },
           "badge": "CSV",
@@ -623,20 +608,20 @@
           "provider": "Avada Invest Centru",
           "rates": {
             "EUR": {
-              "buy": 20.03,
+              "buy": 20.06,
               "sell": 20.12
             },
             "USD": {
-              "buy": 17.16,
-              "sell": 17.23
+              "buy": 17.23,
+              "sell": 17.32
             },
             "GBP": {
-              "buy": 23.05,
-              "sell": 23.18
+              "buy": 23.06,
+              "sell": 23.12
             },
             "RON": {
-              "buy": 3.8,
-              "sell": 3.85
+              "buy": 3.81,
+              "sell": 3.86
             }
           },
           "badge": "CSV",
@@ -651,19 +636,19 @@
           "rates": {
             "EUR": {
               "buy": 20.03,
-              "sell": 20.13
+              "sell": 20.17
             },
             "USD": {
-              "buy": 17.18,
-              "sell": 17.29
+              "buy": 17.2,
+              "sell": 17.31
             },
             "GBP": {
-              "buy": 23.07,
-              "sell": 23.25
+              "buy": 23.05,
+              "sell": 23.16
             },
             "RON": {
               "buy": 3.8,
-              "sell": 3.92
+              "sell": 3.88
             }
           },
           "badge": "CSV",
@@ -677,20 +662,20 @@
           "provider": "Avada Invest Filiala 1",
           "rates": {
             "EUR": {
-              "buy": 20.04,
-              "sell": 20.14
+              "buy": 20.02,
+              "sell": 20.17
             },
             "USD": {
-              "buy": 17.18,
-              "sell": 17.29
+              "buy": 17.2,
+              "sell": 17.31
             },
             "GBP": {
-              "buy": 23.06,
-              "sell": 23.27
+              "buy": 23.03,
+              "sell": 23.16
             },
             "RON": {
               "buy": 3.8,
-              "sell": 3.9
+              "sell": 3.88
             }
           },
           "badge": "CSV",
@@ -705,19 +690,19 @@
           "rates": {
             "EUR": {
               "buy": 20.02,
-              "sell": 20.13
+              "sell": 20.17
             },
             "USD": {
-              "buy": 17.17,
-              "sell": 17.29
+              "buy": 17.19,
+              "sell": 17.31
             },
             "GBP": {
-              "buy": 23.05,
-              "sell": 23.25
+              "buy": 23.03,
+              "sell": 23.16
             },
             "RON": {
               "buy": 3.8,
-              "sell": 3.92
+              "sell": 3.88
             }
           },
           "badge": "CSV",
@@ -732,19 +717,19 @@
           "rates": {
             "EUR": {
               "buy": 20.03,
-              "sell": 20.17
+              "sell": 20.21
             },
             "USD": {
-              "buy": 17.18,
-              "sell": 17.29
+              "buy": 17.22,
+              "sell": 17.31
             },
             "GBP": {
-              "buy": 23.06,
-              "sell": 23.25
+              "buy": 23.05,
+              "sell": 23.16
             },
             "RON": {
               "buy": 3.8,
-              "sell": 3.92
+              "sell": 3.91
             }
           },
           "badge": "CSV",
@@ -762,11 +747,11 @@
               "sell": 20.14
             },
             "USD": {
-              "buy": 17.19,
+              "buy": 17.21,
               "sell": 17.32
             },
             "GBP": {
-              "buy": 23.06,
+              "buy": 23.05,
               "sell": 23.27
             },
             "RON": {
@@ -789,11 +774,11 @@
               "sell": 20.14
             },
             "USD": {
-              "buy": 17.19,
+              "buy": 17.21,
               "sell": 17.32
             },
             "GBP": {
-              "buy": 23.06,
+              "buy": 23.05,
               "sell": 23.27
             },
             "RON": {
@@ -813,11 +798,11 @@
           "rates": {
             "EUR": {
               "buy": 20.01,
-              "sell": 20.22
+              "sell": 20.18
             },
             "USD": {
-              "buy": 17.16,
-              "sell": 17.35
+              "buy": 17.22,
+              "sell": 17.38
             },
             "GBP": {
               "buy": 23,
@@ -839,16 +824,16 @@
           "provider": "Avada Invest Filiala 2",
           "rates": {
             "EUR": {
-              "buy": 20.03,
-              "sell": 20.14
+              "buy": 20.05,
+              "sell": 20.12
             },
             "USD": {
-              "buy": 17.17,
-              "sell": 17.29
+              "buy": 17.2,
+              "sell": 17.3
             },
             "GBP": {
-              "buy": 23.06,
-              "sell": 23.27
+              "buy": 23.05,
+              "sell": 23.15
             },
             "RON": {
               "buy": 3.8,
@@ -867,11 +852,11 @@
           "rates": {
             "EUR": {
               "buy": 20.01,
-              "sell": 20.22
+              "sell": 20.18
             },
             "USD": {
-              "buy": 17.16,
-              "sell": 17.35
+              "buy": 17.22,
+              "sell": 17.38
             },
             "GBP": {
               "buy": 23,
@@ -893,20 +878,20 @@
           "provider": "Avada Invest Filiala 4",
           "rates": {
             "EUR": {
-              "buy": 20.05,
+              "buy": 20,
               "sell": 20.21
             },
             "USD": {
-              "buy": 17.18,
-              "sell": 17.32
+              "buy": 17.22,
+              "sell": 17.31
             },
             "GBP": {
-              "buy": 23.06,
-              "sell": 23.25
+              "buy": 23.05,
+              "sell": 23.16
             },
             "RON": {
               "buy": 3.8,
-              "sell": 3.92
+              "sell": 3.9
             }
           },
           "badge": "CSV",
@@ -924,16 +909,16 @@
               "sell": 20.14
             },
             "USD": {
-              "buy": 17.15,
+              "buy": 17.22,
               "sell": 17.31
             },
             "GBP": {
               "buy": 23.05,
-              "sell": 23.21
+              "sell": 23.14
             },
             "RON": {
               "buy": 3.8,
-              "sell": 3.9
+              "sell": 3.89
             }
           },
           "badge": "CSV",
@@ -951,16 +936,16 @@
               "sell": 20.21
             },
             "USD": {
-              "buy": 17.18,
-              "sell": 17.34
+              "buy": 17.2,
+              "sell": 17.31
             },
             "GBP": {
-              "buy": 23.06,
-              "sell": 23.25
+              "buy": 23.05,
+              "sell": 23.16
             },
             "RON": {
               "buy": 3.8,
-              "sell": 3.92
+              "sell": 3.91
             }
           },
           "badge": "CSV",
@@ -974,20 +959,20 @@
           "provider": "Avada Invest Filiala 8",
           "rates": {
             "EUR": {
-              "buy": 20.03,
-              "sell": 20.14
+              "buy": 20.01,
+              "sell": 20.17
             },
             "USD": {
-              "buy": 17.17,
-              "sell": 17.29
+              "buy": 17.19,
+              "sell": 17.31
             },
             "GBP": {
-              "buy": 23.06,
-              "sell": 23.27
+              "buy": 23.03,
+              "sell": 23.16
             },
             "RON": {
               "buy": 3.8,
-              "sell": 3.9
+              "sell": 3.88
             }
           },
           "badge": "CSV",
@@ -1001,20 +986,20 @@
           "provider": "Avada Invest Gara Centrală",
           "rates": {
             "EUR": {
-              "buy": 20.03,
+              "buy": 20.06,
               "sell": 20.12
             },
             "USD": {
-              "buy": 17.16,
-              "sell": 17.23
+              "buy": 17.23,
+              "sell": 17.32
             },
             "GBP": {
-              "buy": 23.05,
-              "sell": 23.18
+              "buy": 23.06,
+              "sell": 23.12
             },
             "RON": {
-              "buy": 3.8,
-              "sell": 3.85
+              "buy": 3.81,
+              "sell": 3.86
             }
           },
           "badge": "CSV",
@@ -1028,20 +1013,20 @@
           "provider": "Bancassurance (Calea Ieșilor 14)",
           "rates": {
             "EUR": {
-              "buy": 20.03,
-              "sell": 20.13
+              "buy": 20.06,
+              "sell": 20.17
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.28
+              "buy": 17.2,
+              "sell": 17.29
             },
             "GBP": {
-              "buy": 23.05,
+              "buy": 23.06,
               "sell": 23.15
             },
             "RON": {
-              "buy": 3.82,
-              "sell": 3.85
+              "buy": 3.8,
+              "sell": 3.84
             }
           },
           "badge": "CSV",
@@ -1052,50 +1037,23 @@
           "note": ""
         },
         {
-          "provider": "Bancassurance (Trușeni)",
-          "rates": {
-            "EUR": {
-              "buy": 20.03,
-              "sell": 20.13
-            },
-            "USD": {
-              "buy": 17.15,
-              "sell": 17.28
-            },
-            "GBP": {
-              "buy": 23.05,
-              "sell": 23.15
-            },
-            "RON": {
-              "buy": 3.82,
-              "sell": 3.85
-            }
-          },
-          "badge": "CSV",
-          "providerType": "csv",
-          "location": "Chișinău",
-          "href": "https://www.curs.md/ro/curs_valutar_banci",
-          "subtitle": "str. Calea Ieșilor 103, com. Trușeni, mun. Chișinău",
-          "note": ""
-        },
-        {
           "provider": "Bancassurance (Z-Magazin)",
           "rates": {
             "EUR": {
               "buy": 20.03,
-              "sell": 20.13
+              "sell": 20.17
             },
             "USD": {
-              "buy": 17.18,
-              "sell": 17.29
+              "buy": 17.2,
+              "sell": 17.31
             },
             "GBP": {
-              "buy": 23.07,
-              "sell": 23.25
+              "buy": 23.05,
+              "sell": 23.16
             },
             "RON": {
               "buy": 3.8,
-              "sell": 3.92
+              "sell": 3.88
             }
           },
           "badge": "CSV",
@@ -1106,50 +1064,77 @@
           "note": ""
         },
         {
-          "provider": "Bancassurance Dumeniuc 12A",
+          "provider": "Bancassurance Calea Iesilor 3/2",
           "rates": {
             "EUR": {
               "buy": 20.03,
-              "sell": 20.13
+              "sell": 20.1
             },
             "USD": {
-              "buy": 17.18,
-              "sell": 17.29
+              "buy": 17.22,
+              "sell": 17.28
             },
             "GBP": {
-              "buy": 23.07,
-              "sell": 23.25
+              "buy": 23.03,
+              "sell": 23.12
             },
             "RON": {
-              "buy": 3.8,
-              "sell": 3.92
+              "buy": 3.82,
+              "sell": 3.88
             }
           },
           "badge": "CSV",
           "providerType": "csv",
           "location": "Chișinău",
           "href": "https://www.curs.md/ro/curs_valutar_banci",
-          "subtitle": "str. Profesor Ion Dumeniuc 12A, mun. Chișinău",
+          "subtitle": "str. Calea Ieșilor 3/2, mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Bancassurance Calea Ieșilor 3/1",
+          "rates": {
+            "EUR": {
+              "buy": 20.03,
+              "sell": 20.1
+            },
+            "USD": {
+              "buy": 17.22,
+              "sell": 17.28
+            },
+            "GBP": {
+              "buy": 23.03,
+              "sell": 23.12
+            },
+            "RON": {
+              "buy": 3.82,
+              "sell": 3.88
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Calea Ieșilor 3/1, mun. Chișinău",
           "note": ""
         },
         {
           "provider": "Bancassurance Piața Pruncul",
           "rates": {
             "EUR": {
-              "buy": 20.03,
-              "sell": 20.13
+              "buy": 20.06,
+              "sell": 20.17
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.28
+              "buy": 17.2,
+              "sell": 17.29
             },
             "GBP": {
-              "buy": 23.05,
+              "buy": 23.06,
               "sell": 23.15
             },
             "RON": {
-              "buy": 3.82,
-              "sell": 3.85
+              "buy": 3.8,
+              "sell": 3.84
             }
           },
           "badge": "CSV",
@@ -1164,19 +1149,19 @@
           "rates": {
             "EUR": {
               "buy": 20.03,
-              "sell": 20.13
+              "sell": 20.17
             },
             "USD": {
-              "buy": 17.18,
-              "sell": 17.29
+              "buy": 17.2,
+              "sell": 17.31
             },
             "GBP": {
-              "buy": 23.07,
-              "sell": 23.25
+              "buy": 23.05,
+              "sell": 23.16
             },
             "RON": {
               "buy": 3.8,
-              "sell": 3.92
+              "sell": 3.88
             }
           },
           "badge": "CSV",
@@ -1191,19 +1176,19 @@
           "rates": {
             "EUR": {
               "buy": 20.03,
-              "sell": 20.14
+              "sell": 20.1
             },
             "USD": {
-              "buy": 17.16,
-              "sell": 17.25
+              "buy": 17.22,
+              "sell": 17.28
             },
             "GBP": {
-              "buy": 23.05,
+              "buy": 23.03,
               "sell": 23.12
             },
             "RON": {
-              "buy": 3.8,
-              "sell": 3.9
+              "buy": 3.82,
+              "sell": 3.88
             }
           },
           "badge": "CSV",
@@ -1217,20 +1202,20 @@
           "provider": "Blago Filiala 1",
           "rates": {
             "EUR": {
-              "buy": 20.02,
+              "buy": 20,
               "sell": 20.14
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.26
+              "buy": 17.22,
+              "sell": 17.3
             },
             "GBP": {
               "buy": 23,
-              "sell": 23.13
+              "sell": 23.14
             },
             "RON": {
-              "buy": 3.81,
-              "sell": 3.93
+              "buy": 3.8,
+              "sell": 3.9
             }
           },
           "badge": "CSV",
@@ -1244,19 +1229,19 @@
           "provider": "Blago Filiala 10",
           "rates": {
             "EUR": {
-              "buy": 20.02,
+              "buy": 20,
               "sell": 20.14
             },
             "USD": {
-              "buy": 17.16,
-              "sell": 17.25
+              "buy": 17.2,
+              "sell": 17.3
             },
             "GBP": {
-              "buy": 23.03,
-              "sell": 23.12
+              "buy": 23,
+              "sell": 23.14
             },
             "RON": {
-              "buy": 3.78,
+              "buy": 3.8,
               "sell": 3.9
             }
           },
@@ -1271,19 +1256,19 @@
           "provider": "Blago Filiala 11",
           "rates": {
             "EUR": {
-              "buy": 20.02,
-              "sell": 20.13
+              "buy": 20,
+              "sell": 20.14
             },
             "USD": {
-              "buy": 17.17,
-              "sell": 17.25
+              "buy": 17.2,
+              "sell": 17.3
             },
             "GBP": {
-              "buy": 23.05,
-              "sell": 23.1
+              "buy": 23,
+              "sell": 23.14
             },
             "RON": {
-              "buy": 3.78,
+              "buy": 3.79,
               "sell": 3.9
             }
           },
@@ -1299,19 +1284,19 @@
           "rates": {
             "EUR": {
               "buy": 20,
-              "sell": 20.13
+              "sell": 20.12
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.25
+              "buy": 17.2,
+              "sell": 17.28
             },
             "GBP": {
               "buy": 23,
-              "sell": 23.12
+              "sell": 23.1
             },
             "RON": {
-              "buy": 3.78,
-              "sell": 3.9
+              "buy": 3.8,
+              "sell": 3.88
             }
           },
           "badge": "CSV",
@@ -1326,18 +1311,18 @@
           "rates": {
             "EUR": {
               "buy": 20,
-              "sell": 20.15
+              "sell": 20.14
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.27
+              "buy": 17.2,
+              "sell": 17.3
             },
             "GBP": {
               "buy": 23,
               "sell": 23.14
             },
             "RON": {
-              "buy": 3.78,
+              "buy": 3.8,
               "sell": 3.9
             }
           },
@@ -1353,18 +1338,18 @@
           "rates": {
             "EUR": {
               "buy": 20,
-              "sell": 20.15
+              "sell": 20.12
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.27
+              "buy": 17.2,
+              "sell": 17.3
             },
             "GBP": {
               "buy": 23,
               "sell": 23.14
             },
             "RON": {
-              "buy": 3.78,
+              "buy": 3.8,
               "sell": 3.9
             }
           },
@@ -1380,11 +1365,11 @@
           "rates": {
             "EUR": {
               "buy": 20,
-              "sell": 20.15
+              "sell": 20.14
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.27
+              "buy": 17.2,
+              "sell": 17.3
             },
             "GBP": {
               "buy": 23,
@@ -1392,7 +1377,7 @@
             },
             "RON": {
               "buy": 3.78,
-              "sell": 3.9
+              "sell": 3.89
             }
           },
           "badge": "CSV",
@@ -1407,11 +1392,11 @@
           "rates": {
             "EUR": {
               "buy": 20,
-              "sell": 20.15
+              "sell": 20.14
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.27
+              "buy": 17.2,
+              "sell": 17.3
             },
             "GBP": {
               "buy": 23,
@@ -1437,15 +1422,15 @@
               "sell": 20.14
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.26
+              "buy": 17.2,
+              "sell": 17.3
             },
             "GBP": {
               "buy": 23,
-              "sell": 23.12
+              "sell": 23.14
             },
             "RON": {
-              "buy": 3.78,
+              "buy": 3.8,
               "sell": 3.9
             }
           },
@@ -1460,19 +1445,19 @@
           "provider": "Blago Filiala 18",
           "rates": {
             "EUR": {
-              "buy": 20,
-              "sell": 20.15
+              "buy": 20.02,
+              "sell": 20.13
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.27
+              "buy": 17.22,
+              "sell": 17.29
             },
             "GBP": {
               "buy": 23,
-              "sell": 23.14
+              "sell": 23.12
             },
             "RON": {
-              "buy": 3.78,
+              "buy": 3.8,
               "sell": 3.9
             }
           },
@@ -1488,19 +1473,19 @@
           "rates": {
             "EUR": {
               "buy": 20,
-              "sell": 20.15
+              "sell": 20.14
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.27
+              "buy": 17.2,
+              "sell": 17.3
             },
             "GBP": {
               "buy": 23,
               "sell": 23.14
             },
             "RON": {
-              "buy": 3.78,
-              "sell": 3.9
+              "buy": 3.8,
+              "sell": 3.88
             }
           },
           "badge": "CSV",
@@ -1518,12 +1503,12 @@
               "sell": 20.14
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.27
+              "buy": 17.2,
+              "sell": 17.32
             },
             "GBP": {
               "buy": 23,
-              "sell": 23.13
+              "sell": 23.14
             },
             "RON": {
               "buy": 3.78,
@@ -1542,19 +1527,19 @@
           "rates": {
             "EUR": {
               "buy": 20,
-              "sell": 20.13
+              "sell": 20.14
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.24
+              "buy": 17.2,
+              "sell": 17.32
             },
             "GBP": {
               "buy": 23,
-              "sell": 23.1
+              "sell": 23.14
             },
             "RON": {
-              "buy": 3.78,
-              "sell": 3.89
+              "buy": 3.8,
+              "sell": 3.9
             }
           },
           "badge": "CSV",
@@ -1569,19 +1554,19 @@
           "rates": {
             "EUR": {
               "buy": 20,
-              "sell": 20.13
+              "sell": 20.12
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.25
+              "buy": 17.2,
+              "sell": 17.28
             },
             "GBP": {
               "buy": 23,
-              "sell": 23.12
+              "sell": 23.1
             },
             "RON": {
-              "buy": 3.78,
-              "sell": 3.9
+              "buy": 3.8,
+              "sell": 3.88
             }
           },
           "badge": "CSV",
@@ -1596,11 +1581,11 @@
           "rates": {
             "EUR": {
               "buy": 20,
-              "sell": 20.15
+              "sell": 20.14
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.27
+              "buy": 17.2,
+              "sell": 17.3
             },
             "GBP": {
               "buy": 22.93,
@@ -1623,18 +1608,18 @@
           "rates": {
             "EUR": {
               "buy": 20,
-              "sell": 20.15
+              "sell": 20.14
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.27
+              "buy": 17.2,
+              "sell": 17.3
             },
             "GBP": {
               "buy": 23,
-              "sell": 23.14
+              "sell": 23.12
             },
             "RON": {
-              "buy": 3.78,
+              "buy": 3.8,
               "sell": 3.9
             }
           },
@@ -1650,18 +1635,18 @@
           "rates": {
             "EUR": {
               "buy": 20,
-              "sell": 20.15
+              "sell": 20.14
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.27
+              "buy": 17.2,
+              "sell": 17.3
             },
             "GBP": {
               "buy": 23,
               "sell": 23.14
             },
             "RON": {
-              "buy": 3.78,
+              "buy": 3.79,
               "sell": 3.9
             }
           },
@@ -1676,19 +1661,19 @@
           "provider": "Blago Filiala 8",
           "rates": {
             "EUR": {
-              "buy": 20.03,
-              "sell": 20.17
+              "buy": 20.02,
+              "sell": 20.15
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.28
+              "buy": 17.2,
+              "sell": 17.32
             },
             "GBP": {
               "buy": 23,
               "sell": 23.14
             },
             "RON": {
-              "buy": 3.78,
+              "buy": 3.8,
               "sell": 3.9
             }
           },
@@ -1704,14 +1689,14 @@
           "rates": {
             "EUR": {
               "buy": 20,
-              "sell": 20.15
+              "sell": 20.14
             },
             "USD": {
               "buy": 17.15,
-              "sell": 17.27
+              "sell": 17.3
             },
             "GBP": {
-              "buy": 23,
+              "buy": 22.95,
               "sell": 23.14
             },
             "RON": {
@@ -1730,20 +1715,20 @@
           "provider": "Bonifar-com",
           "rates": {
             "EUR": {
-              "buy": 20.05,
-              "sell": 20.1
+              "buy": 20.06,
+              "sell": 20.11
             },
             "USD": {
-              "buy": 17.17,
-              "sell": 17.25
+              "buy": 17.23,
+              "sell": 17.27
             },
             "GBP": {
-              "buy": 23.07,
-              "sell": 23.18
+              "buy": 23.06,
+              "sell": 23.17
             },
             "RON": {
               "buy": 3.82,
-              "sell": 3.87
+              "sell": 3.86
             }
           },
           "badge": "CSV",
@@ -1761,7 +1746,7 @@
               "sell": 20.14
             },
             "USD": {
-              "buy": 17.15,
+              "buy": 17.22,
               "sell": 17.31
             },
             "GBP": {
@@ -1784,20 +1769,20 @@
           "provider": "Casa Prima",
           "rates": {
             "EUR": {
-              "buy": 20.03,
-              "sell": 20.14
+              "buy": 20.01,
+              "sell": 20.17
             },
             "USD": {
-              "buy": 17.17,
-              "sell": 17.29
+              "buy": 17.19,
+              "sell": 17.31
             },
             "GBP": {
-              "buy": 23.06,
-              "sell": 23.27
+              "buy": 23.03,
+              "sell": 23.16
             },
             "RON": {
               "buy": 3.8,
-              "sell": 3.9
+              "sell": 3.88
             }
           },
           "badge": "CSV",
@@ -1808,18 +1793,45 @@
           "note": ""
         },
         {
-          "provider": "Clio",
+          "provider": "Casso",
           "rates": {
             "EUR": {
               "buy": 20.03,
               "sell": 20.1
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.22
+              "buy": 17.2,
+              "sell": 17.28
             },
             "GBP": {
-              "buy": 23.05,
+              "buy": 22.96,
+              "sell": 23.12
+            },
+            "RON": {
+              "buy": 3.82,
+              "sell": 3.86
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Constantin Brâncuși 3 (CC Plaza), mun. Chișinău",
+          "note": ""
+        },
+        {
+          "provider": "Clio",
+          "rates": {
+            "EUR": {
+              "buy": 20.06,
+              "sell": 20.17
+            },
+            "USD": {
+              "buy": 17.2,
+              "sell": 17.29
+            },
+            "GBP": {
+              "buy": 23.06,
               "sell": 23.15
             },
             "RON": {
@@ -1838,15 +1850,15 @@
           "provider": "Clio Filiala 1",
           "rates": {
             "EUR": {
-              "buy": 20.03,
-              "sell": 20.1
+              "buy": 20.06,
+              "sell": 20.17
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.22
+              "buy": 17.2,
+              "sell": 17.29
             },
             "GBP": {
-              "buy": 23.05,
+              "buy": 23.06,
               "sell": 23.15
             },
             "RON": {
@@ -1865,15 +1877,15 @@
           "provider": "Clio Filiala 3",
           "rates": {
             "EUR": {
-              "buy": 20.03,
-              "sell": 20.08
+              "buy": 20.06,
+              "sell": 20.17
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.2
+              "buy": 17.2,
+              "sell": 17.29
             },
             "GBP": {
-              "buy": 23.05,
+              "buy": 23.06,
               "sell": 23.15
             },
             "RON": {
@@ -1892,15 +1904,15 @@
           "provider": "Clio Filiala 4",
           "rates": {
             "EUR": {
-              "buy": 20.03,
-              "sell": 20.13
+              "buy": 20.06,
+              "sell": 20.17
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.28
+              "buy": 17.2,
+              "sell": 17.29
             },
             "GBP": {
-              "buy": 23.05,
+              "buy": 23.06,
               "sell": 23.15
             },
             "RON": {
@@ -1916,50 +1928,23 @@
           "note": ""
         },
         {
-          "provider": "CSV-Real Filiala Chișinău",
+          "provider": "Dalion",
           "rates": {
             "EUR": {
-              "buy": 20.01,
-              "sell": 20.09
+              "buy": 20.06,
+              "sell": 20.17
             },
             "USD": {
-              "buy": 17.07,
-              "sell": 17.23
+              "buy": 17.2,
+              "sell": 17.29
             },
             "GBP": {
-              "buy": 23,
+              "buy": 23.06,
               "sell": 23.15
             },
             "RON": {
               "buy": 3.8,
-              "sell": 3.85
-            }
-          },
-          "badge": "CSV",
-          "providerType": "csv",
-          "location": "Chișinău",
-          "href": "https://www.curs.md/ro/curs_valutar_banci",
-          "subtitle": "bd. Ștefan cel Mare și Sfânt 77 (colț cu str. Mihai Eminescu), mun. Chișinău",
-          "note": ""
-        },
-        {
-          "provider": "Dalion",
-          "rates": {
-            "EUR": {
-              "buy": 20.03,
-              "sell": 20.13
-            },
-            "USD": {
-              "buy": 17.15,
-              "sell": 17.28
-            },
-            "GBP": {
-              "buy": 23.05,
-              "sell": 23.15
-            },
-            "RON": {
-              "buy": 3.82,
-              "sell": 3.85
+              "sell": 3.84
             }
           },
           "badge": "CSV",
@@ -1973,16 +1958,16 @@
           "provider": "Deghest",
           "rates": {
             "EUR": {
-              "buy": 20.03,
-              "sell": 20.1
+              "buy": 20.06,
+              "sell": 20.12
             },
             "USD": {
-              "buy": 17.13,
-              "sell": 17.2
+              "buy": 17.17,
+              "sell": 17.26
             },
             "GBP": {
               "buy": 22.9,
-              "sell": 23.12
+              "sell": 23.1
             },
             "RON": {
               "buy": 3.82,
@@ -2000,16 +1985,16 @@
           "provider": "Deghest Filiala 1",
           "rates": {
             "EUR": {
-              "buy": 20.03,
-              "sell": 20.1
+              "buy": 20.06,
+              "sell": 20.12
             },
             "USD": {
-              "buy": 17.13,
-              "sell": 17.2
+              "buy": 17.17,
+              "sell": 17.26
             },
             "GBP": {
               "buy": 22.9,
-              "sell": 23.12
+              "sell": 23.1
             },
             "RON": {
               "buy": 3.82,
@@ -2027,16 +2012,16 @@
           "provider": "Deghest Filiala 2",
           "rates": {
             "EUR": {
-              "buy": 20.03,
-              "sell": 20.1
+              "buy": 20.06,
+              "sell": 20.12
             },
             "USD": {
-              "buy": 17.12,
-              "sell": 17.2
+              "buy": 17.16,
+              "sell": 17.26
             },
             "GBP": {
               "buy": 22.9,
-              "sell": 23.12
+              "sell": 23.1
             },
             "RON": {
               "buy": 3.82,
@@ -2051,19 +2036,46 @@
           "note": ""
         },
         {
+          "provider": "Edischimb",
+          "rates": {
+            "EUR": {
+              "buy": 20.02,
+              "sell": 20.14
+            },
+            "USD": {
+              "buy": 17.22,
+              "sell": 17.31
+            },
+            "GBP": {
+              "buy": 23.05,
+              "sell": 23.14
+            },
+            "RON": {
+              "buy": 3.8,
+              "sell": 3.89
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Bălți",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "str. Vasile Alecsandri 2, mun. Bălți",
+          "note": ""
+        },
+        {
           "provider": "Euro Schimb",
           "rates": {
             "EUR": {
               "buy": 20.01,
-              "sell": 20.13
+              "sell": 20.12
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.27
+              "buy": 17.2,
+              "sell": 17.3
             },
             "GBP": {
               "buy": 23.01,
-              "sell": 23.15
+              "sell": 23.14
             },
             "RON": {
               "buy": 3.8,
@@ -2082,19 +2094,19 @@
           "rates": {
             "EUR": {
               "buy": 20.02,
-              "sell": 20.13
+              "sell": 20.1
             },
             "USD": {
-              "buy": 17.17,
-              "sell": 17.25
+              "buy": 17.22,
+              "sell": 17.3
             },
             "GBP": {
               "buy": 23.05,
-              "sell": 23.2
+              "sell": 23.15
             },
             "RON": {
               "buy": 3.8,
-              "sell": 3.87
+              "sell": 3.86
             }
           },
           "badge": "CSV",
@@ -2109,19 +2121,19 @@
           "rates": {
             "EUR": {
               "buy": 20.02,
-              "sell": 20.13
+              "sell": 20.1
             },
             "USD": {
-              "buy": 17.17,
-              "sell": 17.25
+              "buy": 17.22,
+              "sell": 17.3
             },
             "GBP": {
               "buy": 23.05,
-              "sell": 23.2
+              "sell": 23.15
             },
             "RON": {
               "buy": 3.8,
-              "sell": 3.87
+              "sell": 3.86
             }
           },
           "badge": "CSV",
@@ -2139,15 +2151,15 @@
               "sell": 20.13
             },
             "USD": {
-              "buy": 17.18,
-              "sell": 17.28
+              "buy": 17.22,
+              "sell": 17.3
             },
             "GBP": {
               "buy": 23.05,
-              "sell": 23.23
+              "sell": 23.15
             },
             "RON": {
-              "buy": 3.81,
+              "buy": 3.82,
               "sell": 3.86
             }
           },
@@ -2163,19 +2175,19 @@
           "rates": {
             "EUR": {
               "buy": 20.03,
-              "sell": 20.14
+              "sell": 20.1
             },
             "USD": {
-              "buy": 17.16,
-              "sell": 17.25
+              "buy": 17.22,
+              "sell": 17.28
             },
             "GBP": {
-              "buy": 23.05,
+              "buy": 23.03,
               "sell": 23.12
             },
             "RON": {
-              "buy": 3.8,
-              "sell": 3.9
+              "buy": 3.82,
+              "sell": 3.88
             }
           },
           "badge": "CSV",
@@ -2193,16 +2205,16 @@
               "sell": 20.14
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.26
+              "buy": 17.2,
+              "sell": 17.3
             },
             "GBP": {
               "buy": 23,
-              "sell": 23.13
+              "sell": 23.14
             },
             "RON": {
-              "buy": 3.8,
-              "sell": 3.93
+              "buy": 3.82,
+              "sell": 3.94
             }
           },
           "badge": "CSV",
@@ -2220,15 +2232,15 @@
               "sell": 20.14
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.26
+              "buy": 17.2,
+              "sell": 17.3
             },
             "GBP": {
               "buy": 23,
               "sell": 23.14
             },
             "RON": {
-              "buy": 3.78,
+              "buy": 3.8,
               "sell": 3.9
             }
           },
@@ -2243,20 +2255,20 @@
           "provider": "Francunic",
           "rates": {
             "EUR": {
-              "buy": 20.02,
-              "sell": 20.12
+              "buy": 20.03,
+              "sell": 20.13
             },
             "USD": {
-              "buy": 17.17,
-              "sell": 17.25
+              "buy": 17.22,
+              "sell": 17.3
             },
             "GBP": {
               "buy": 23.05,
-              "sell": 23.2
+              "sell": 23.15
             },
             "RON": {
-              "buy": 3.8,
-              "sell": 3.87
+              "buy": 3.82,
+              "sell": 3.88
             }
           },
           "badge": "CSV",
@@ -2270,20 +2282,20 @@
           "provider": "Franklin",
           "rates": {
             "EUR": {
-              "buy": 20.02,
+              "buy": 20.03,
               "sell": 20.13
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.28
+              "buy": 17.22,
+              "sell": 17.3
             },
             "GBP": {
               "buy": 23.05,
-              "sell": 23.2
+              "sell": 23.15
             },
             "RON": {
-              "buy": 3.8,
-              "sell": 3.87
+              "buy": 3.82,
+              "sell": 3.86
             }
           },
           "badge": "CSV",
@@ -2297,20 +2309,20 @@
           "provider": "Ghestrat",
           "rates": {
             "EUR": {
-              "buy": 20.05,
-              "sell": 20.1
+              "buy": 20.06,
+              "sell": 20.11
             },
             "USD": {
-              "buy": 17.17,
-              "sell": 17.25
+              "buy": 17.23,
+              "sell": 17.27
             },
             "GBP": {
-              "buy": 23.07,
-              "sell": 23.18
+              "buy": 23.06,
+              "sell": 23.17
             },
             "RON": {
               "buy": 3.82,
-              "sell": 3.87
+              "sell": 3.86
             }
           },
           "badge": "CSV",
@@ -2324,11 +2336,11 @@
           "rates": {
             "EUR": {
               "buy": 20,
-              "sell": 20.22
+              "sell": 20.18
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.35
+              "buy": 17.21,
+              "sell": 17.38
             },
             "GBP": {
               "buy": 22.99,
@@ -2354,16 +2366,16 @@
               "sell": 20.14
             },
             "USD": {
-              "buy": 17.15,
+              "buy": 17.22,
               "sell": 17.31
             },
             "GBP": {
               "buy": 23.05,
-              "sell": 23.21
+              "sell": 23.14
             },
             "RON": {
               "buy": 3.8,
-              "sell": 3.9
+              "sell": 3.89
             }
           },
           "badge": "CSV",
@@ -2378,11 +2390,11 @@
           "rates": {
             "EUR": {
               "buy": 20.01,
-              "sell": 20.22
+              "sell": 20.18
             },
             "USD": {
-              "buy": 17.16,
-              "sell": 17.35
+              "buy": 17.22,
+              "sell": 17.38
             },
             "GBP": {
               "buy": 23,
@@ -2408,16 +2420,16 @@
               "sell": 20.14
             },
             "USD": {
-              "buy": 17.15,
+              "buy": 17.22,
               "sell": 17.31
             },
             "GBP": {
               "buy": 23.05,
-              "sell": 23.21
+              "sell": 23.14
             },
             "RON": {
               "buy": 3.8,
-              "sell": 3.9
+              "sell": 3.89
             }
           },
           "badge": "CSV",
@@ -2435,15 +2447,15 @@
               "sell": 20.13
             },
             "USD": {
-              "buy": 17.18,
-              "sell": 17.28
+              "buy": 17.22,
+              "sell": 17.3
             },
             "GBP": {
               "buy": 23.05,
-              "sell": 23.23
+              "sell": 23.15
             },
             "RON": {
-              "buy": 3.81,
+              "buy": 3.82,
               "sell": 3.86
             }
           },
@@ -2458,20 +2470,20 @@
           "provider": "Macnotis",
           "rates": {
             "EUR": {
-              "buy": 20.02,
-              "sell": 20.12
+              "buy": 20,
+              "sell": 20.1
             },
             "USD": {
-              "buy": 17.16,
-              "sell": 17.26
+              "buy": 17.18,
+              "sell": 17.28
             },
             "GBP": {
               "buy": 22.93,
-              "sell": 23.18
+              "sell": 23.12
             },
             "RON": {
-              "buy": 3.8,
-              "sell": 3.89
+              "buy": 3.78,
+              "sell": 3.87
             }
           },
           "badge": "CSV",
@@ -2482,50 +2494,23 @@
           "note": ""
         },
         {
-          "provider": "Mațco Trade",
-          "rates": {
-            "EUR": {
-              "buy": 19.9,
-              "sell": 20.1
-            },
-            "USD": {
-              "buy": 17,
-              "sell": 17.22
-            },
-            "GBP": {
-              "buy": 22.9,
-              "sell": 23.18
-            },
-            "RON": {
-              "buy": 3.8,
-              "sell": 3.88
-            }
-          },
-          "badge": "CSV",
-          "providerType": "csv",
-          "location": "Chișinău",
-          "href": "https://www.curs.md/ro/curs_valutar_banci",
-          "subtitle": "str. 60 ani ai Biruinţei 11, or. Cricova, mun. Chișinău",
-          "note": ""
-        },
-        {
           "provider": "Milinex-com",
           "rates": {
             "EUR": {
-              "buy": 20.05,
+              "buy": 20.06,
               "sell": 20.1
             },
             "USD": {
-              "buy": 17.17,
-              "sell": 17.23
+              "buy": 17.23,
+              "sell": 17.26
             },
             "GBP": {
-              "buy": 23.07,
+              "buy": 23.06,
               "sell": 23.18
             },
             "RON": {
               "buy": 3.82,
-              "sell": 3.86
+              "sell": 3.85
             }
           },
           "badge": "CSV",
@@ -2539,20 +2524,20 @@
           "provider": "Milinex-Schimb",
           "rates": {
             "EUR": {
-              "buy": 20.05,
+              "buy": 20.06,
               "sell": 20.1
             },
             "USD": {
-              "buy": 17.17,
-              "sell": 17.23
+              "buy": 17.23,
+              "sell": 17.26
             },
             "GBP": {
-              "buy": 23.07,
+              "buy": 23.06,
               "sell": 23.18
             },
             "RON": {
               "buy": 3.82,
-              "sell": 3.86
+              "sell": 3.85
             }
           },
           "badge": "CSV",
@@ -2566,12 +2551,12 @@
           "provider": "Money Breeze",
           "rates": {
             "EUR": {
-              "buy": 20,
-              "sell": 20.09
+              "buy": 20.02,
+              "sell": 20.16
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.21
+              "buy": 17.18,
+              "sell": 17.28
             },
             "GBP": {
               "buy": 22.9,
@@ -2579,7 +2564,7 @@
             },
             "RON": {
               "buy": 3.8,
-              "sell": 3.9
+              "sell": 3.85
             }
           },
           "badge": "CSV",
@@ -2597,15 +2582,15 @@
               "sell": 20.13
             },
             "USD": {
-              "buy": 17.18,
-              "sell": 17.28
+              "buy": 17.22,
+              "sell": 17.3
             },
             "GBP": {
               "buy": 23.05,
-              "sell": 23.23
+              "sell": 23.15
             },
             "RON": {
-              "buy": 3.81,
+              "buy": 3.82,
               "sell": 3.86
             }
           },
@@ -2624,15 +2609,15 @@
               "sell": 20.1
             },
             "USD": {
-              "buy": 17.18,
-              "sell": 17.28
+              "buy": 17.22,
+              "sell": 17.3
             },
             "GBP": {
               "buy": 23.05,
-              "sell": 23.2
+              "sell": 23.17
             },
             "RON": {
-              "buy": 3.81,
+              "buy": 3.82,
               "sell": 3.86
             }
           },
@@ -2647,15 +2632,15 @@
           "provider": "Orion",
           "rates": {
             "EUR": {
-              "buy": 20.03,
-              "sell": 20.1
+              "buy": 20.06,
+              "sell": 20.17
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.22
+              "buy": 17.2,
+              "sell": 17.29
             },
             "GBP": {
-              "buy": 23.05,
+              "buy": 23.06,
               "sell": 23.15
             },
             "RON": {
@@ -2674,12 +2659,12 @@
           "provider": "Partener-Plus",
           "rates": {
             "EUR": {
-              "buy": 20.03,
-              "sell": 20.13
+              "buy": 20.06,
+              "sell": 20.12
             },
             "USD": {
-              "buy": 17.17,
-              "sell": 17.25
+              "buy": 17.22,
+              "sell": 17.3
             },
             "GBP": {
               "buy": 23.05,
@@ -2687,7 +2672,7 @@
             },
             "RON": {
               "buy": 3.82,
-              "sell": 3.87
+              "sell": 3.86
             }
           },
           "badge": "CSV",
@@ -2705,8 +2690,8 @@
               "sell": 20.13
             },
             "USD": {
-              "buy": 17.17,
-              "sell": 17.25
+              "buy": 17.22,
+              "sell": 17.3
             },
             "GBP": {
               "buy": 23.05,
@@ -2714,7 +2699,7 @@
             },
             "RON": {
               "buy": 3.82,
-              "sell": 3.87
+              "sell": 3.86
             }
           },
           "badge": "CSV",
@@ -2732,8 +2717,8 @@
               "sell": 20.13
             },
             "USD": {
-              "buy": 17.17,
-              "sell": 17.25
+              "buy": 17.22,
+              "sell": 17.3
             },
             "GBP": {
               "buy": 23.05,
@@ -2741,7 +2726,7 @@
             },
             "RON": {
               "buy": 3.82,
-              "sell": 3.87
+              "sell": 3.86
             }
           },
           "badge": "CSV",
@@ -2759,8 +2744,8 @@
               "sell": 20.13
             },
             "USD": {
-              "buy": 17.17,
-              "sell": 17.25
+              "buy": 17.22,
+              "sell": 17.3
             },
             "GBP": {
               "buy": 23.05,
@@ -2768,7 +2753,7 @@
             },
             "RON": {
               "buy": 3.82,
-              "sell": 3.87
+              "sell": 3.86
             }
           },
           "badge": "CSV",
@@ -2779,22 +2764,49 @@
           "note": ""
         },
         {
+          "provider": "Partener-Plus Filiala 4",
+          "rates": {
+            "EUR": {
+              "buy": 20.06,
+              "sell": 20.17
+            },
+            "USD": {
+              "buy": 17.22,
+              "sell": 17.3
+            },
+            "GBP": {
+              "buy": 23.05,
+              "sell": 23.15
+            },
+            "RON": {
+              "buy": 3.82,
+              "sell": 3.86
+            }
+          },
+          "badge": "CSV",
+          "providerType": "csv",
+          "location": "Chișinău",
+          "href": "https://www.curs.md/ro/curs_valutar_banci",
+          "subtitle": "bd. Dacia 16/1, mun. Chișinău",
+          "note": ""
+        },
+        {
           "provider": "Protanir",
           "rates": {
             "EUR": {
-              "buy": 20.05,
-              "sell": 20.1
+              "buy": 20.07,
+              "sell": 20.12
             },
             "USD": {
-              "buy": 17.19,
-              "sell": 17.23
+              "buy": 17.2,
+              "sell": 17.28
             },
             "GBP": {
-              "buy": 22.09,
-              "sell": 23.12
+              "buy": 22.06,
+              "sell": 23.11
             },
             "RON": {
-              "buy": 3.81,
+              "buy": 3.82,
               "sell": 3.86
             }
           },
@@ -2813,15 +2825,15 @@
               "sell": 20.1
             },
             "USD": {
-              "buy": 17.18,
-              "sell": 17.28
+              "buy": 17.22,
+              "sell": 17.3
             },
             "GBP": {
               "buy": 23.05,
-              "sell": 23.19
+              "sell": 23.14
             },
             "RON": {
-              "buy": 3.81,
+              "buy": 3.82,
               "sell": 3.86
             }
           },
@@ -2833,50 +2845,23 @@
           "note": ""
         },
         {
-          "provider": "Rizavic",
-          "rates": {
-            "EUR": {
-              "buy": 20,
-              "sell": 20.08
-            },
-            "USD": {
-              "buy": 17.1,
-              "sell": 17.2
-            },
-            "GBP": {
-              "buy": 22.95,
-              "sell": 23.15
-            },
-            "RON": {
-              "buy": 3.8,
-              "sell": 3.85
-            }
-          },
-          "badge": "CSV",
-          "providerType": "csv",
-          "location": "Chișinău",
-          "href": "https://www.curs.md/ro/curs_valutar_banci",
-          "subtitle": "24/7",
-          "note": "24/7"
-        },
-        {
           "provider": "Schimb Impact",
           "rates": {
             "EUR": {
-              "buy": 20.03,
-              "sell": 20.13
+              "buy": 20.06,
+              "sell": 20.17
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.22
+              "buy": 17.18,
+              "sell": 17.26
             },
             "GBP": {
-              "buy": 23.02,
-              "sell": 23.1
+              "buy": 22.9,
+              "sell": 23.12
             },
             "RON": {
-              "buy": 3.83,
-              "sell": 3.85
+              "buy": 3.82,
+              "sell": 3.86
             }
           },
           "badge": "CSV",
@@ -2894,12 +2879,12 @@
               "sell": 20.1
             },
             "USD": {
-              "buy": 17.1,
-              "sell": 17.2
+              "buy": 17.18,
+              "sell": 17.28
             },
             "GBP": {
               "buy": 22.23,
-              "sell": 23.27
+              "sell": 23.25
             },
             "RON": {
               "buy": 3.75,
@@ -2917,20 +2902,20 @@
           "provider": "Valtix (Mercedes Centru)",
           "rates": {
             "EUR": {
-              "buy": 20.03,
-              "sell": 20.13
+              "buy": 20.06,
+              "sell": 20.17
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.28
+              "buy": 17.2,
+              "sell": 17.29
             },
             "GBP": {
-              "buy": 23.05,
+              "buy": 23.06,
               "sell": 23.15
             },
             "RON": {
-              "buy": 3.82,
-              "sell": 3.85
+              "buy": 3.8,
+              "sell": 3.84
             }
           },
           "badge": "CSV",
@@ -2944,20 +2929,20 @@
           "provider": "Valuta Elit",
           "rates": {
             "EUR": {
-              "buy": 20.04,
-              "sell": 20.09
+              "buy": 20.06,
+              "sell": 20.1
             },
             "USD": {
-              "buy": 17.15,
-              "sell": 17.22
+              "buy": 17.18,
+              "sell": 17.24
             },
             "GBP": {
-              "buy": 23.05,
+              "buy": 23.06,
               "sell": 23.12
             },
             "RON": {
-              "buy": 3.8,
-              "sell": 3.86
+              "buy": 3.82,
+              "sell": 3.85
             }
           },
           "badge": "CSV",
@@ -2971,20 +2956,20 @@
           "provider": "Vandis-Schimb",
           "rates": {
             "EUR": {
-              "buy": 20.05,
+              "buy": 20.06,
               "sell": 20.1
             },
             "USD": {
-              "buy": 17.17,
-              "sell": 17.25
+              "buy": 17.2,
+              "sell": 17.28
             },
             "GBP": {
-              "buy": 23.07,
+              "buy": 23,
               "sell": 23.18
             },
             "RON": {
               "buy": 3.82,
-              "sell": 3.86
+              "sell": 3.85
             }
           },
           "badge": "CSV",
